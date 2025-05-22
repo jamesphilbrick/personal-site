@@ -2,8 +2,11 @@
 
 ## Welcome to my site!
 
+!!! warning 
+	This site is still very much under construction. Many, many things are incomplete. Please don't be too judgy. Nobody likes an uninvited critic.  
+
 To test if I've set up image handling correctly, here's a picture of an ostrich looking majestic during golden hour: 
-![](assets/Pasted%20image%2020250520211739.png)
+![](assets/Pasted%20image%2020250520211739.png){width="300", align=right}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet tincidunt eros. Fusce pellentesque dolor id accumsan condimentum. Etiam eu volutpat lorem. Fusce pellentesque iaculis eros, vel tincidunt nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla molestie eu ipsum non tempus. Duis justo quam, malesuada eu consectetur eu, porta a mauris.
 
 See my [first blog post](blog/posts/first.md). 

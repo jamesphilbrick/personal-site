@@ -11,6 +11,8 @@ theme:
   font:
     text: Lato
     heading: Bree Serif
+  logo: assets/icons/vector-fowl-background.svg
+  favicon: assets/icons/favicon.png
 
 extra_css:
   - stylesheets/extra.css
