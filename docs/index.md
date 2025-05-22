@@ -6,6 +6,8 @@ To test if I've set up image handling correctly, here's a picture of an ostrich 
 ![](assets/Pasted%20image%2020250520211739.png)
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet tincidunt eros. Fusce pellentesque dolor id accumsan condimentum. Etiam eu volutpat lorem. Fusce pellentesque iaculis eros, vel tincidunt nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla molestie eu ipsum non tempus. Duis justo quam, malesuada eu consectetur eu, porta a mauris.
 
+See my [first blog post](blog/posts/first.md). 
+
 Nam maximus magna at arcu blandit suscipit. Phasellus ac orci risus. Aenean augue sem, tempus vel turpis nec, elementum tincidunt magna. Nullam malesuada arcu ut urna tincidunt eleifend. Sed mattis congue augue. Aenean ullamcorper dolor nec laoreet fermentum. Proin vel placerat est. Nulla nec bibendum felis, a vestibulum mi. Duis lobortis odio quis mauris pharetra dictum. Aenean in neque enim. Curabitur eleifend blandit erat, et volutpat tellus cursus ut.
 
 Vivamus at metus mauris. Vestibulum diam arcu, dapibus sed nulla aliquet, consequat consectetur tortor. Donec quis tortor orci. Nullam gravida vestibulum iaculis. Fusce sit amet ante feugiat, pharetra sem vitae, vulputate dui. Sed feugiat mauris sed nunc facilisis, eu condimentum urna laoreet. Vestibulum at felis mi. Cras posuere purus eu aliquet dictum. Phasellus lacinia ornare sollicitudin. Cras ac rhoncus tortor. Praesent tempor felis in tempus gravida.

@@ -1,0 +1,7 @@
+authors:
+  James:
+    name: James Philbrick        # Author name
+    description: string # Author description
+    avatar: ./../docs/assets/abbie-profile.jpg         # Author avatar
+    slug: url           # Author profile slug
+    url: url            # Author website URL

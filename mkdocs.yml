@@ -18,6 +18,8 @@ extra_css:
 plugins:
   - offline
   - search
+  - blog:
+      authors_file: "{blog}/.authors.yml"
 
 markdown_extensions:
   - pymdownx.tasklist:
@@ -33,6 +35,10 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - footnotes
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 copyright: Copyright &copy; 2024 James Philbrick.
 
