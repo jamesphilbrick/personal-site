@@ -1,1 +1,2 @@
-python -m mkdocs build -d ./output
+python -m mkdocs build -d ./publish
+pause
