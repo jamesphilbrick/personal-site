@@ -1,0 +1,42 @@
+site_name: James Philbrick
+
+nav:
+  - Home: 'index.md'
+  - Contact: 'contact.md'
+
+theme:
+  name: material
+  palette:
+    scheme: modern-terracotta
+  font:
+    text: Lato
+    heading: Bree Serif
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - offline
+  - search
+
+markdown_extensions:
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.arithmatex:
+      generic: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - footnotes
+
+copyright: Copyright &copy; 2024 James Philbrick.
+
+extra:
+  social:
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:<james.philbrick@gmail.com>
