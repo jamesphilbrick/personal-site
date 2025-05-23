@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/index.md",
+                "file": "docs/photography.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "photography"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/index.md",
+                "file": "docs/photography.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of index"
+              "title": "Outline of photography"
             }
           }
         ],
@@ -168,9 +168,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "38fdff3223ea180a",
+  "active": "384f20bd2913ab4f",
   "lastOpenFiles": [
-    "docs/blog/posts/first.md",
+    "publish/search/search_index.json",
+    "publish/search/search_index.js",
+    "publish/search",
+    "publish/blog/archive/2025.html",
+    "publish/blog/archive",
+    "publish/blog/2025/05/22/test-blog-post.html",
+    "publish/blog/2025/05/22",
+    "publish/blog/2025/05",
+    "publish/blog/2025",
+    "publish/blog/index.html",
+    "publish/blog",
+    "publish/assets/images/favicon.png",
     "publish/assets/icons/vector-fowl-white.svg",
     "publish/assets/icons/vector-fowl-terracotta.svg",
     "publish/assets/icons/vector-fowl-olive.svg",
@@ -180,19 +191,14 @@
     "publish/assets/icons/source.svg",
     "publish/assets/icons/source.png",
     "publish/assets/icons/favicon.png",
-    "publish/assets/icons",
-    "docs/assets/icons/source.png",
-    "docs/assets/icons",
-    "docs/assets/New folder",
-    "publish/assets/James Philbrick CV.pdf",
-    "docs/assets/James Philbrick CV.pdf",
-    "publish/search/search_index.js",
-    "publish/search/search_index.json",
-    "publish/search",
-    "publish/blog/archive/2025.html",
-    "publish/blog/archive",
+    "docs/photography-astro.md",
+    "docs/photography-general.md",
+    "docs/photography.md",
+    "docs/photography-macro.md",
+    "docs/photography-wildlife.md",
     "docs/index.md",
     "docs/contact.md",
+    "docs/blog/posts/first.md",
     "docs/blog/index.md",
     "README.md"
   ]

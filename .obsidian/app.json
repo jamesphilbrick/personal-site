@@ -1,5 +1,8 @@
 {
   "attachmentFolderPath": "docs/assets",
   "useMarkdownLinks": true,
-  "newLinkFormat": "relative"
+  "newLinkFormat": "relative",
+  "foldHeading": true,
+  "alwaysUpdateLinks": true,
+  "showInlineTitle": false
 }

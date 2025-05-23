@@ -20,6 +20,9 @@
   --md-default-bg-color: var(--background);
   --md-default-fg-color: var(--copyGrey);
   
+  --md-accent-fg-color: var(--mustard);
+  --md-typeset-a-color: var(--olive);
+
   /* Default color shades */
   --md-default-fg-color:               var(--copyGrey);
   --md-default-fg-color--light:        hsla(0, 0%, 0%, 0.54);
