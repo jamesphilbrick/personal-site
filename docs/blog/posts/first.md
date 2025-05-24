@@ -4,7 +4,6 @@ authors:
 date: 2025-05-22
 ---
 
-# Test Blog Post
+# Yorkshire 3 Peaks
 
-This is a test. I'm also testing to see if I can insert files: 
-[my CV](../../assets/James%20Philbrick%20CV.pdf) should be linked.
+This is a test.

@@ -3,6 +3,8 @@ site_name: James Philbrick
 nav:
   - Home: 'index.md'
   - Contact: 'contact.md'
+  - Blog: './blog/index.md'
+  - CV: 'cv.md'
 
 theme:
   name: material

@@ -1,12 +1,15 @@
 # Photography
 
-While I'm not an avid photographer by any means, but I have dabbled here and there. While I've uploaded a few photos to my [Instagram](https://www.instagram.com/james_photographs_stufff), I also have some a few categorised galleries below. 
+I'm not an avid photographer by any means, but I have dabbled here and there. While I've uploaded a few photos to my [Instagram](https://www.instagram.com/james_photographs_stufff), I also have some a few categorised galleries below. 
 
 ## Galleries & Notes By Section
 <div class="grid cards" markdown>
-- [Macro :material-bug:](photography-macro.md){ .md-button .md-button--primary }
+- [Macro :material-bug:](photography-macro.md){ .md-button .md-button--primary } 
+
 - [Wildlife :material-rabbit-variant:](photography-wildlife.md){ .md-button .md-button--primary }
+
 - [General :material-image:](photography-general.md){ .md-button .md-button--primary }
+
 - [Astro :material-star-four-points:](photography-astro.md){ .md-button .md-button--primary }
 </div>
 ## Gear
