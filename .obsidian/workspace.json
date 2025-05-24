@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/photography-macro.md",
+                "file": "docs/projects.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "photography-macro"
+              "title": "projects"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/photography-macro.md",
+                "file": "docs/projects.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of photography-macro"
+              "title": "Outline of projects"
             }
           }
         ],
@@ -170,37 +170,41 @@
   },
   "active": "38fdff3223ea180a",
   "lastOpenFiles": [
-    "docs/photography-wildlife.md",
-    "docs/photography-macro.md",
-    "docs/assets/_MG_0817.jpg",
-    "docs/assets/_MG_2364.jpg",
-    "docs/assets/8 stack Woodlouse.jpg",
-    "docs/assets/11 stack Harvestman on tree at Plas Newydd.jpg",
-    "docs/assets/_MG_9563.jpg",
-    "docs/assets/Harvestman on leaf at Plas Newydd.jpg",
-    "docs/photography-general.md",
-    "docs/assets/451738340013.jpg",
-    "docs/assets/451738350030-cropped.jpg",
-    "docs/assets/451738350016.jpg",
-    "docs/photography-film-double-exposures.md",
-    "docs/photography.md",
-    "docs/assets/451738360011.jpg",
-    "docs/photography-astro.md",
-    "docs/professional-projects.md",
-    "docs/wps-templates-manager.md",
-    "docs/index.md",
-    "docs/cv.md",
     "publish/search/search_index.json",
     "publish/search/search_index.js",
     "publish/search",
-    "publish/blog/archive/2025.html",
-    "publish/blog/archive",
+    "publish/blog/2025/05/24/camping-in-the-peak-district.html",
     "publish/blog/2025/05/22/yorkshire-3-peaks.html",
+    "publish/blog/2025/05/24",
     "publish/blog/2025/05/22",
+    "publish/blog/archive/2025.html",
     "publish/blog/2025/05",
-    "publish/blog/2025",
     "publish/blog/index.html",
+    "publish/blog/archive",
+    "docs/photography-astro.md",
+    "docs/projects-professional.md",
+    "docs/projects.md",
+    "docs/projects-personal.md",
+    "docs/photography-wildlife.md",
+    "docs/photography-macro.md",
+    "docs/wps-templates-manager.md",
+    "docs/blog/posts/trip-peak-district.md",
+    "publish/assets/images/favicon.png",
+    "publish/assets/icons/vector-fowl-white.svg",
+    "publish/assets/icons/vector-fowl-terracotta.svg",
+    "publish/assets/icons/vector-fowl-olive.svg",
+    "publish/assets/icons/vector-fowl-copy-grey.svg",
+    "publish/assets/icons/vector-fowl-black.svg",
+    "publish/assets/icons/vector-fowl-background.svg",
+    "publish/assets/icons/source.svg",
+    "publish/assets/icons/favicon.png",
+    "publish/assets/icons/source.png",
     "docs/blog/posts/first.md",
+    "docs/photography-general.md",
+    "docs/photography.md",
+    "docs/photography-film-double-exposures.md",
+    "docs/index.md",
+    "docs/cv.md",
     "docs/contact.md",
     "docs/blog/index.md",
     "README.md"

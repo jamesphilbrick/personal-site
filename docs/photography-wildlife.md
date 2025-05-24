@@ -5,3 +5,8 @@
 ///caption
 A [Ring Necked Parakeet](https://www.wildlondon.org.uk/wildlife-explorer/birds/parakeet/ring-necked-parakeet) in London.
 ///
+
+![](assets/_MG_1666-cropped.jpg){width=400}
+///caption
+Stags at [Chatsworth House](https://www.chatsworth.org/).
+///

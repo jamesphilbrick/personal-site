@@ -4,6 +4,8 @@ nav:
   - Home: 'index.md'
   - Contact: 'contact.md'
   - Blog: './blog/index.md'
+  - Projects: projects.md
+  - Photography: 'photography.md'
   - CV: 'cv.md'
 
 theme:
