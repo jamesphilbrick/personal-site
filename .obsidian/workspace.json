@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/projects.md",
+                "file": "docs/wps-templates-manager.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "projects"
+              "title": "wps-templates-manager"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/projects.md",
+                "file": "docs/wps-templates-manager.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of projects"
+              "title": "Outline of wps-templates-manager"
             }
           }
         ],
@@ -170,25 +170,20 @@
   },
   "active": "38fdff3223ea180a",
   "lastOpenFiles": [
-    "publish/search/search_index.json",
-    "publish/search/search_index.js",
-    "publish/search",
-    "publish/blog/2025/05/24/camping-in-the-peak-district.html",
-    "publish/blog/2025/05/22/yorkshire-3-peaks.html",
-    "publish/blog/2025/05/24",
-    "publish/blog/2025/05/22",
-    "publish/blog/archive/2025.html",
-    "publish/blog/2025/05",
-    "publish/blog/index.html",
-    "publish/blog/archive",
-    "docs/photography-astro.md",
+    "publish/wps-data-driven-to-do-list.html",
     "docs/projects-professional.md",
-    "docs/projects.md",
-    "docs/projects-personal.md",
-    "docs/photography-wildlife.md",
-    "docs/photography-macro.md",
+    "docs/wps-data-driven-to-do-list.md",
     "docs/wps-templates-manager.md",
-    "docs/blog/posts/trip-peak-district.md",
+    "publish/404.html",
+    "publish/assets/javascripts/lunr/min/lunr.zh.min.js",
+    "publish/assets/javascripts/lunr/min/lunr.vi.min.js",
+    "publish/assets/javascripts/lunr/min/lunr.tr.min.js",
+    "publish/assets/javascripts/lunr/min/lunr.ta.min.js",
+    "publish/assets/javascripts/lunr/min/lunr.sv.min.js",
+    "publish/assets/javascripts/lunr/min/lunr.th.min.js",
+    "publish/assets/javascripts/lunr/min/lunr.te.min.js",
+    "publish/assets/javascripts/lunr/min/lunr.stemmer.support.min.js",
+    "publish/assets/javascripts/lunr/min/lunr.sa.min.js",
     "publish/assets/images/favicon.png",
     "publish/assets/icons/vector-fowl-white.svg",
     "publish/assets/icons/vector-fowl-terracotta.svg",
@@ -197,12 +192,18 @@
     "publish/assets/icons/vector-fowl-black.svg",
     "publish/assets/icons/vector-fowl-background.svg",
     "publish/assets/icons/source.svg",
-    "publish/assets/icons/favicon.png",
     "publish/assets/icons/source.png",
-    "docs/blog/posts/first.md",
+    "publish/assets/icons/favicon.png",
+    "docs/projects.md",
+    "docs/projects-personal.md",
+    "docs/photography-wildlife.md",
+    "docs/photography-macro.md",
     "docs/photography-general.md",
-    "docs/photography.md",
     "docs/photography-film-double-exposures.md",
+    "docs/photography-astro.md",
+    "docs/photography.md",
+    "docs/blog/posts/trip-peak-district.md",
+    "docs/blog/posts/first.md",
     "docs/index.md",
     "docs/cv.md",
     "docs/contact.md",

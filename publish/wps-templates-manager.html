@@ -347,6 +347,42 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-simplified-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      A Simplified Example
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Further Information
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -365,29 +401,72 @@
 <h1 id="inventor-templates-manager-application">Inventor Templates Manager Application</h1>
 <p><a href="projects-professional.html"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg></span> Projects - Professional</a></p>
 <h2 id="overview">Overview</h2>
-<p>Both myself and my colleagues find ourselves designing and adapting a lot of contract-specific CAD arrangements to suit different customer requirements. Each arrangement is an Inventor assembly file which gets added to a larger transformer assembly. To do this efficiently, we have a collection of template parts, assemblies, and drawings located on a shared drive. The necessary files used to be copied over to a contract-specific folder and manually re-linked. This manual process had problems:
-- The correct files to copy had to be manually located and moved, which took time.
-- Manually referencing the correct parts to the newly-copied contract-specific assembly was tedious and error-prone; leaving a link to a template part in a contract-specific assembly is <em>not good</em>, and sometimes changes would propagate to completely unrelated contracts. </p>
-<p>The aim of this project was two-fold: 
-1. To allow for templates to be copied over automatically, with all references to parts/subassemblies being updated. In some cases, the time saved is significant - 20mins vs 30s, while removing any chance of human error from the equation. 
-2. To allow for templates to be added and updated by anyone in the team, with very little configuration or technical knowledge of how the program works. </p>
-<p>So I wrote the following desktop program to be used by all members of the Engineering dept.:
+<p>Both myself and my colleagues find ourselves designing and adapting a lot of contract-specific CAD arrangements to suit different customer requirements. Each arrangement is an Inventor assembly file which gets added to a larger transformer assembly. To do this efficiently, we have a collection of template parts, assemblies, and drawings located on a shared drive. The necessary files used to be copied over to a contract-specific folder and manually re-linked. This manual process had problems:</p>
+<ul>
+<li>The correct files to copy had to be manually located and moved, which took time.</li>
+<li>Re-referencing the correct parts to the newly-copied contract-specific assembly was tedious and error-prone; leaving a link to a template part in a contract-specific assembly is <em>not good</em>, and sometimes changes would propagate to completely unrelated contracts. </li>
+</ul>
+<p>This project was a response to these problems. The aim was two-fold: </p>
+<ol>
+<li>To allow for template files to be copied over automatically, with all references to parts/subassemblies being updated accordingly. In some cases, the time saved is significant - 20m vs 30s in some cases. This also removes any chance of human error from the equation. </li>
+<li>To allow for templates to be added and updated by anyone in the team, with very little configuration or technical knowledge of how the program works. </li>
+</ol>
+<p>So I wrote the following desktop application to be used by all members of the Engineering department:
 <img alt="" src="assets/WPSTemplates_QF5PSZLVmi.png" /></p>
-<p>I won't go into detail about it's usage, but the general process is as follows: </p>
-<p><pre class="mermaid"><code>---
-config:
-  theme: redux
----
-flowchart TD
-    A(["Start"]) --&gt; B["Contract data populated from SQL database"]
-    B --&gt; C["Select Template to copy"]
-    C --&gt; D@{ label: "Template files are copied and linked as per the 'template definitions' Excel sheet" }
-    D --&gt; E(["End"])
-    D@{ shape: rect}
-</code></pre>
-The <code>template definitions</code> sheet mentioned above is a shared Excel workbook which simply defines the files, locations, and actions that make up each template:
-<img alt="" src="assets/EXCEL_DVZtNQFzrG.png" /></p>
-<p><img alt="" src="assets/EXCEL_HQIibJv8nP.png" /></p>
+<h2 id="usage">Usage</h2>
+<p>The general usage is simple:
+<pre class="mermaid"><code>flowchart TD
+    A(["Start"]) --&gt; B["Populate contract-specific data from SQL database"]
+    B --&gt; C["Select template to copy"]
+    C --&gt; D["Template files are copied, renamed, and re-referenced as per the 'template definitions' Excel workbook"]
+    D --&gt; E(["End"])</code></pre>
+The <code>template definitions.xlsx</code> sheet is a shared Excel workbook which simply defines the files, locations, and actions that make up each template:
+<img alt="" src="assets/EXCEL_DVZtNQFzrG.png" />
+Each template has its own sheet wherein each row represents each file. The <code>FROM</code> column is where the template file is located, and the <code>TO</code> column states where it should be copied and how it should be renamed. The <code>ACTION</code> column then defines an action to be done to that file after it has been copied (e.g. populating data into the border block of a drawing). </p>
+<p>These paths use a set of custom <em>tokens</em> in square brackets (e.g. <code>[SO]</code> and <code>[N]</code> as in the above screenshot). These are replaced with contract-specific data when the file is copied over. These tokens are of course custom to the folder and internal part numbering (IPN) rules that the department/company uses. 
+<img alt="" src="assets/EXCEL_HQIibJv8nP.png" />
+Creating a new template is simply a matter of creating a new sheet and populating a row for each template file. That's it! No scripting required. The new template will then automatically appear in the application for all users. </p>
+<h2 id="a-simplified-example">A Simplified Example</h2>
+<p>Let's say I have a template with 2 parts: <code>MyPart1.ipt</code> and <code>MyPart2.ipt</code>. These combine together to form <code>MyAssembly.iam</code> which is displayed in <code>MyDrawing.idw</code>. And let's say that contract number <code>12345</code> requires an altered version of this template: <code>MyAssembly-12345.iam</code>. </p>
+<p>Assuming there is a <code>[contract]</code> token set up, my <code>Template Definitions.xlsx</code> file will look like:</p>
+<table>
+<thead>
+<tr>
+<th>From</th>
+<th>To</th>
+<th>Action (drop down)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SomeSourcePath/MyPart1.ipt</td>
+<td>SomeDestinationPath/MyPart1-[contract].ipt</td>
+<td></td>
+</tr>
+<tr>
+<td>SomeSourcePath/MyPart2.ipt</td>
+<td>SomeDestinationPath/MyPart2-[contract].ipt</td>
+<td></td>
+</tr>
+<tr>
+<td>SomeSourcePath/MyAssembly.iam</td>
+<td>SomeDestinationPath/MyAssembly-[contract].iam</td>
+<td>Reference Files</td>
+</tr>
+<tr>
+<td>SomeSourcePath/MyDrawing.idw</td>
+<td>SomeDestinationPath/MyDrawing-[contract].idw</td>
+<td>Reference Files and Populate Border</td>
+</tr>
+</tbody>
+</table>
+<p>I then just run the application and modify the resulting <code>MyAssembly-12345</code>. I can then export the drawing and I'm done!</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>While this system works for now, it'll need to be revised if there are any updates to file naming or IPN conventions. This was a temporary solution to increase departmental efficiency prior to our department getting Autodesk Vault, which may render its use void. That being said, it gets used every day by and I'd estimate it saves ±2 hrs per week (total, over 4 engineers). At a median hourly labour rate of £65, that's equivalent to <span class="arithmatex">\(2 \times 65 \times 48 = £6240/\text{year}\)</span>. While it's hard to know the exact quantitative pecuniary impact, it's qualitative influence is definitely tangible. In my opinion, the success of this project boils down to the fact that it forces everyone to use the same standardised templates. Periodic improvements and adjustments are instantly seen and used by all users.</p>
+<p>I hope you found this interesting! <img alt="😃" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f603.svg" title=":smiley:" /> I had loads of fun doing it and I learnt a lot in the process. </p>
+<p>For more work I've done with automating Inventor workflows, see <a href="projects-professional.html">projects-professional</a>.</p>
+<h2 id="further-information">Further Information</h2>
+<p>The program is a <a href="https://learn.microsoft.com/en-us/dotnet/desktop/wpf/overview/">WPF</a> application written in C#. It runs natively on all windows machines in the office with no further dependencies other than Excel, Inventor, and access to the company SQL database. It logs all actions and includes descriptive error handling. Its performance is bottlenecked by the speed of the Excel interop API and the speed at which Inventor can load assemblies and drawings. </p>
 
 
 
