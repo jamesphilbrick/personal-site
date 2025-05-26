@@ -7,5 +7,4 @@ icon: material/home
 ## Featured Pages
 - [photography](photography.md)
 ## Featured Blog Posts
-!!! note
-	I've not written any posts yet; check back later!
+- [Yorkshire Three Peaks](blog/posts/yorkshire-three-peaks.md)

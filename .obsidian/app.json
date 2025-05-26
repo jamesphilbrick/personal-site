@@ -4,5 +4,6 @@
   "newLinkFormat": "relative",
   "foldHeading": true,
   "alwaysUpdateLinks": true,
-  "showInlineTitle": false
+  "showInlineTitle": false,
+  "showUnsupportedFiles": true
 }
