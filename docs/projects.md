@@ -1,5 +1,9 @@
+---
+icon: material/puzzle
+---
+
 # Projects
 See:
 
-- [projects-professional](projects-professional.md) - For work and engineering projects. 
-- [projects-personal](projects-personal.md) - For anything else that tickles my fancy. 
+- [Projects - Professional](projects-professional.md) - For work and engineering projects. 
+- [Projects - Personal](projects-personal.md) - For anything else that tickles my fancy. 

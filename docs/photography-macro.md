@@ -48,13 +48,13 @@ An 8-image stack of a woodlouse.
 A mite of some sort enjoying a dead fly on a beach in Whitby.
 ///
 ## Observation wish-list
-- [ ] More Pseudoscorpions!
+- [ ] More Pseudoscorpions! Would be cool to see to see one [hitching a ride](https://en.wikipedia.org/wiki/Pseudoscorpion#/media/File:Leptopeza.flavipes.with.Lamprochernes.2.jpg).
 - [ ] Heather Crab Spider
-- [ ] Ladybird Spider (rare, but are making a [comeback](https://britishspiders.org.uk/sites/default/files/2023-01/The%20fall%20and%20rise%20of%20the%20Ladybird%20Spider%20in%20Britain.pdf))
+- [ ] Ladybird Spider - rare, but are making a [comeback](https://britishspiders.org.uk/sites/default/files/2023-01/The%20fall%20and%20rise%20of%20the%20Ladybird%20Spider%20in%20Britain.pdf). Would likely need to go looking in Europe, [iNaturalist](https://www.inaturalist.org/) doesn't have any recordings in Britain at all.
 - [ ] [Megabunus diadema](https://en.wikipedia.org/wiki/Megabunus_diadema#/media/File:Megabunus_diadema_1.jpg) - the most punk-looking spider in existence. 
 - [ ] Zebra Jumping Spider
 - [ ] Acorn Weevil
 ## Links
-:fontawesome-regular-hand-point-right: [NatureFold :material-youtube:](https://www.youtube.com/@naturefold) is an awesome Youtube channel dedicated to macro. I never knew that so many varieties of springtail existed, nor did I expect that anyone could be so knowledgeable and interested in them. 
+:fontawesome-regular-hand-point-right: [:material-youtube: NatureFold](https://www.youtube.com/@naturefold) is an awesome Youtube channel dedicated to macro. I never knew that so many varieties of springtail existed, nor did I expect that anyone could be so knowledgeable and interested in them. 
 
 :fontawesome-regular-hand-point-right:[:material-web: iNaturalist](https://www.inaturalist.org/) is a great resource for recording, classifying, and identifying all sorts of species across the world. 

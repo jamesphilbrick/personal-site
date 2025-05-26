@@ -1,3 +1,6 @@
+---
+icon: material/camera
+---
 # Photography
 I'm not an avid photographer by any means, but I have dabbled here and there. While I've uploaded a few photos to my [Instagram](https://www.instagram.com/james_photographs_stufff), I also have some a few categorised galleries below. 
 ## Galleries & Notes By Section

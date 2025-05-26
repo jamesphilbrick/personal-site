@@ -7,6 +7,7 @@ nav:
   - Projects: projects.md
   - Photography: 'photography.md'
   - CV: 'cv.md'
+  - About: 'about-this-site.md'
 
 theme:
   name: material
@@ -20,6 +21,10 @@ theme:
 
 extra_css:
   - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 plugins:
   - offline
@@ -56,4 +61,4 @@ copyright: Copyright &copy; 2024 James Philbrick.
 extra:
   social:
     - icon: fontawesome/solid/paper-plane
-      link: mailto:<james.philbrick@gmail.com>
+      link: mailto:<james.philbrick@gmail.com
