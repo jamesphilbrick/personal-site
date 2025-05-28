@@ -7,6 +7,7 @@ date: 2025-05-22
 The [Yorkshire 3 Peaks](https://www.threepeakschallenge.uk/yorkshire-three-peaks-challenge/) is a popular 38.6km route which takes walkers, dawdlers, and amblers alike over the peaks of Pen-y-Ghent, Whernside, and Ingleborough. While some try to walk the whole endeavour in a single day, Abbie and I decided to do it in two, and make it a camping trip. While we weren't in as much of a rush as a result, we did have to lug around our tent and other kit.
 ## Route
 We actually did the route in reverse to the typical order, starting with Ingleborough and finishing with Pen-y-Ghent. I recorded the whole thing on Strava and this was the route we took: 
+
 ![](../../assets/Screenshot%202025-05-26%20200352.png)
 /// caption
 The orange route was the first day, and the blue the second. 
@@ -16,7 +17,7 @@ The raw `.gpx` file can be downloaded [here](../../assets/Combined%20Yorkshire%2
 ## Day 1 - Ingleborough
 We intended on parking in the [Yorkshire Dales National Park Car Park](https://maps.app.goo.gl/ydQgiVpizabpCwFk7) in Horton in Ribblesdale, but it was full to the brim. Luckily the field just over the bridge had been opened up as an overflow carpark, with a fee of $£5$ or so. 
 
-The first summit up Ingleborough was *bleak*. I won't sugar coat it. The start was alright up to the train station and over the first few hills. We were passing loads of ultra-marathoners who were finishing a race of all three peaks; some looked like they were having the time of their life, and others looked like they were on the edge of death. Once we started gaining some actual altitude on the mountain face, we stared to share in their pain. The wind picked up and so did the rain - a consistent theme throughout: sodden soaking wetness! We were slugging our way up whilst earning a new appreciation for shelter. It's like when you get sick and regret taking it for granted when you're healthy, except we regretted taking for granted all the times we had a wall to stop the sodding wind and rain from being blown into our eyes. To further dampen our spirits, we were passed by a rescue team coming down with somebody on a stretcher. I assume it was one of the marathoners who, in his exhaustion, stepped on a rock which looked a lot more solid than it felt... We flattened ourselves against a wall about halfway up to eat our lunch before continuing up to the summit. The summit which was, like any other fine English day, was completely blanketed in cloud and mist. The path to the actual summit beacon was also uncharacteristically ambiguous, I was essentially relying on OpenStreetMap (which is a lot better than a lot of other maps providers in terms of listing footpaths and walkways by the way) to plot a course. That must be what pilots feel like when flying with no visibility - just trusting their instruments. At least we had a gradient under our feet to keep us moving along. There were *loads* of people at the top, many of whom obviously belonged to some group excursion. We didn't stick around though and to get out of the mist, we headed straight down to the campsite. The descent was a lot more cheery than the ascent, we were better sheltered, the rain had stopped (but the wet grass still left our feet swimming), and we were greeting lots of cheery passers-by. 
+The first summit up Ingleborough was *bleak*. I won't sugar coat it. The start was alright up to the train station and over the first few hills. We were passing loads of ultra-marathoners who were finishing a race of all three peaks; some looked like they were having the time of their life, and others looked like they were on the edge of death. Once we started gaining some actual altitude on the mountain face, we started to share in their pain. The wind picked up and so did the rain - a consistent theme throughout: sodden soaking wetness! We were slugging our way up whilst earning a new appreciation for shelter. It's like when you get sick and regret taking it for granted when you're healthy, except we regretted taking for granted all the times we had a wall to stop the sodding wind and rain from being blown into our eyes. To further dampen our spirits, we were passed by a rescue team coming down with somebody on a stretcher. I assume it was one of the marathoners who, in his exhaustion, stepped on a rock which looked a lot more solid than it felt... We flattened ourselves against a wall about halfway up to eat our lunch before continuing up to the summit. The summit which was, like any other fine English day, was completely blanketed in cloud and mist. The path to the actual summit beacon was also uncharacteristically ambiguous, I was essentially relying on OpenStreetMap (which is a lot better than a lot of other maps providers in terms of listing footpaths and walkways by the way) to plot a course. That must be what pilots feel like when flying with no visibility - just trusting their instruments. At least we had a gradient under our feet to keep us moving along. There were *loads* of people at the top, many of whom obviously belonged to some group excursion. We didn't stick around though and to get out of the mist, we headed straight down to the campsite. The descent was a lot more cheery than the ascent, we were better sheltered, the rain had stopped (but the wet grass still left our feet swimming), and we were greeting lots of cheery passers-by. 
 
 ![](../../assets/Pasted%20image%2020250526205203.png)
 /// caption
@@ -37,7 +38,7 @@ Me pensively looking off into the distance while holding the sheer ambrosia that
 
 ![](../../assets/Pasted%20image%2020250526211134.png)
 /// caption
-An uninspired view of the campsite barn and through-road while I was waiting for Abbie to have wee.
+An uninspired view of the campsite barn and through-road while I was waiting for Abbie to have a wee.
 ///
 
 ## Day 2 - Whernside & Pen-y-Ghent
@@ -54,18 +55,19 @@ The side of the mountain, before disappearing into the mist.
 ///
 
 ![](../../assets/Pasted%20image%2020250526212559.png)
-///
+/// caption
 The descent ends up winding in tandem with a river, which has a nice waterfall.
 ///
 
 While it doesn't look like it in the above photo, this was definitely the busiest part of the walk. It must just have been the time of day or something. It was also obvious that we were doing it backwards to the conventional route with all the people huffing and puffing up past us while we cantered on down. The ground then levelled out and we found ourselves approaching [Ribblehead Viaduct](https://en.wikipedia.org/wiki/Ribblehead_Viaduct). Completed in 1875, it gave me a sense of appreciation for when people used to design things purely on paper, without CAD or any advanced numerical analyses, back when people had to really *think* and *trust* that their design would work. And that is would remain not falling over 150 years later when we walked beneath its arches. 
 
 ![](../../assets/Pasted%20image%2020250526213657.png)
-///
+/// caption
 Approaching the viaduct.
 ///
 
 While Ribblehead Viaduct is grand and beautiful, its best feature is that it has a pub at the other end. 
+
 ![](../../assets/Pasted%20image%2020250526213914.png)
 /// caption
 A view from the pub garden.
