@@ -433,7 +433,7 @@
 
 
 <h1 id="inventor-templates-manager-application">Inventor Templates Manager Application</h1>
-<p><a href="projects-professional.html"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg></span> Projects - Professional</a></p>
+<p><a href="projects-engineering.html"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg></span> Projects - Engineering</a></p>
 <h2 id="overview">Overview</h2>
 <p>Both myself and my colleagues find ourselves designing and adapting a lot of contract-specific CAD arrangements to suit different customer requirements. Each arrangement is an Inventor assembly file which gets added to a larger transformer assembly. To do this efficiently, we have a collection of template parts, assemblies, and drawings located on a shared drive. The necessary files used to be copied over to a contract-specific folder and manually re-linked. This manual process had problems:</p>
 <ul>
@@ -498,7 +498,7 @@ Creating a new template is simply a matter of creating a new sheet and populatin
 <h2 id="conclusion">Conclusion</h2>
 <p>While this system works for now, it'll need to be revised if there are any updates to file naming or IPN conventions. This was a temporary solution to increase departmental efficiency prior to our department getting Autodesk Vault, which may render its use void. That being said, it gets used every day by and I'd estimate it saves ±2 hrs per week (total, over 4 engineers). At a median hourly labour rate of <span class="arithmatex">\(£65\)</span>, that's equivalent to <span class="arithmatex">\(2 \times 65 \times 48 = £6240/\text{year}\)</span>. While it's hard to know the exact quantitative pecuniary impact, it's qualitative influence is definitely tangible. In my opinion, the success of this project boils down to the fact that it forces everyone to use the same standardised templates. Periodic improvements and adjustments are instantly seen and used by all users.</p>
 <p>I hope you found this interesting! <img alt="😃" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f603.svg" title=":smiley:" /> I had loads of fun doing it and I learnt a lot in the process. </p>
-<p>For more work I've done with automating Inventor workflows, see <a href="projects-professional.html">Projects - Professional</a>.</p>
+<p>For more work I've done with automating Inventor workflows, see <a href="projects-engineering.html">Projects - Professional</a>.</p>
 <h2 id="further-information">Further Information</h2>
 <p>The program is a <a href="https://learn.microsoft.com/en-us/dotnet/desktop/wpf/overview/">WPF</a> application written in C#. It runs natively on all windows machines in the office with no further dependencies other than Excel, Inventor, and access to the company SQL database. It logs all actions and includes descriptive error handling. Its performance is bottlenecked by the speed of the Excel interop API and the speed at which Inventor can load assemblies and drawings. </p>
 

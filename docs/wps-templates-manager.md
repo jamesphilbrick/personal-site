@@ -1,5 +1,5 @@
 # Inventor Templates Manager Application
-[:material-arrow-left: Projects - Professional](projects-professional.md)
+[:material-arrow-left: Projects - Engineering](projects-engineering.md)
 ## Overview
 Both myself and my colleagues find ourselves designing and adapting a lot of contract-specific CAD arrangements to suit different customer requirements. Each arrangement is an Inventor assembly file which gets added to a larger transformer assembly. To do this efficiently, we have a collection of template parts, assemblies, and drawings located on a shared drive. The necessary files used to be copied over to a contract-specific folder and manually re-linked. This manual process had problems:
 
@@ -47,6 +47,6 @@ While this system works for now, it'll need to be revised if there are any updat
 
 I hope you found this interesting! :smiley: I had loads of fun doing it and I learnt a lot in the process. 
 
-For more work I've done with automating Inventor workflows, see [Projects - Professional](projects-professional.md).
+For more work I've done with automating Inventor workflows, see [Projects - Professional](projects-engineering.md).
 ## Further Information
 The program is a [WPF](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/overview/) application written in C#. It runs natively on all windows machines in the office with no further dependencies other than Excel, Inventor, and access to the company SQL database. It logs all actions and includes descriptive error handling. Its performance is bottlenecked by the speed of the Excel interop API and the speed at which Inventor can load assemblies and drawings. 

@@ -1,4 +1,4 @@
-# Projects - Professional
+# Engineering Projects
 [:material-arrow-left: Projects](projects.md)
 
 - [:simple-autodesk: | Inventor Templates Manager](wps-templates-manager.md) - `Inventor, Excel, User-Friendly` - Using Excel to define Inventor templates and automatically copy, rename, and reference them to a contract-specific folder. 
