@@ -459,24 +459,50 @@
 <h1 id="mandelbrot-set-on-the-commodore-64">Mandelbrot Set on the Commodore 64</h1>
 <p><a href="projects.html"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg></span> Projects</a></p>
 <h2 id="overview">Overview</h2>
-<p>The <a href="https://en.wikipedia.org/wiki/Mandelbrot_set">Mandelbrot set</a> is... </p>
+<p>My aim is to put my new (...ly acquired) Commodore 64 to the test by rendering out an image of the Mandelbrot set. It also seems like a nice familiar yet non-trivial program to get to grips with BASIC with; one with a few challenges and a satisfying result.</p>
+<p>The <a href="https://math.libretexts.org/Bookshelves/Analysis/Complex_Analysis_-_A_Visual_and_Interactive_Introduction_(Ponce_Campuzano)/05%3A_Chapter_5/5.05%3A_The_Mandelbrot_Set">Mandelbrot set</a> is simply just a set of complex numbers which happen to all satisfy the following condition:</p>
+<p>Given some point, <span class="arithmatex">\(c\)</span>, on the complex plane, throw it into the below recursive formula:</p>
+<div class="arithmatex">\[
+\begin{align}
+z_{n+1} &amp;= {z_n}^2 + c \\
+z_0 &amp;= 0 + 0i
+\end{align}
+\]</div>
+<p>...and see what happens to the value after some <span class="arithmatex">\(N\)</span> iterations. If that value grows out of control and tends to blow up towards infinity, then it's disqualified; it's not allowed in the set. Conversely, if it remains <em>bounded</em>, then it's granted membership status.</p>
+<p>While this definition seems completely out of left field and gives the impression that good ol' <a href="https://en.wikipedia.org/wiki/Benoit_Mandelbrot">Benoit Mandelbrot</a> must have been rather bored at one point, it turns out it allows us to generate all sorts of really fancy images. When plotting this set on the complex plane, we're left with an infinitely detailed and wonderfully complex self-repeating delight. And this is just for one definition of one set. There are oodles out there. For instance, check out <a href="https://paulbourke.net/fractals/sinjulia/">this page</a> by Paul Bourke for some saliva-inducing visuals using the Julia set which takes the form <span class="arithmatex">\(z_{n+1}=c\sin{(n_k)}\)</span>. Also take a look at <a href="https://paulbourke.net/fractals/juliaset/index.html">these ones</a> while you're there.</p>
+<p>For now, I'll stick with rendering the Mandelbrot set. It's more of a classic: the granddaddy of fractals. </p>
+<p>Note that pixels can either be coloured in a boolean manner(either in the set or out), or they can be gradated in hue or intensity based on the number of iterations they can handle before blowing up to infinity. For now, I'm going with the former approach as it's simpler and means I don't have to deal with the C64's limited colour palate. Did I say "limited"? I meant to say "extensive"; there are a whopping 16 of them to choose from!</p>
 <h2 id="development">Development</h2>
-<p>I first sat down with my physical C64 to learn how to use it and read up on the basics of BASIC. Something about reading the physical manual in my hand which had been type-set in the early '80s was really satisfying. Limiting myself to just the one resource in front of me, without googling a whole lot and jumping from site to site every time I needed to learn a new piece of syntax, was quite refreshing; it forced me to really <em>read</em> the manual and experience the charm of all its hand-drawn figures and its dated simplicity.</p>
-<p>After tapping away at my breadbin for a while, I decided to power it down and jump on to my windows 11 PC to start developing the program using a modern IDE and emulator, for a couple of reasons:</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 4h2v12l5.5-5.5 1.42 1.42L12 19.84l-7.92-7.92L5.5 10.5 11 16V4Z"/></svg></span> If you want to skip the details, you can go straight to the <a href="#running-the-program">output</a>.</p>
+<p>At first, I sat down in front of my breadbin of a C64 to learn how to even use the thing, and to read up on the basics of BASIC. Something about reading the physical manual held in my physical hand, reading physically printed words which were typeset in the early '80s was really satisfying. Some of the lines and arrows were very obviously hand drawn and I'm sure <a href="https://hullabaloo.co.uk/blog/whatever-happened-letraset/">Letraset</a> was likely used here or there.
+Limiting myself to just the one resource in front of me, without googling a whole lot or jumping from site to site every time I needed to learn a new piece of syntax was quite refreshing; it forced me to really <em>read</em> the manual and experience the charm dated simplicity.</p>
+<p>After tapping away for a while, I decided to chicken out. I powered it down and jumped onto my Windows 11 PC to start developing the program using a modern IDE (<a href="https://www.ajordison.co.uk/index.html">CBM prg Studio</a>) and emulator (<a href="https://vice-emu.sourceforge.io/">VICE</a>), for a couple of reasons:</p>
 <ol>
-<li>...nice ide w/ automatic re-numbering</li>
-<li>can speed up the emulator</li>
+<li>A nice modern IDE environment greatly speeds up development with features such as<ol>
+<li>a usable amount of screen space,</li>
+<li>automatic renumbering of lines for easier editing,</li>
+<li>and pretty colours.</li>
 </ol>
-<p>My first attempt at the program was to use the standard screen resolution and use <code>PEEK</code> and <code>POKE</code> to fill the character ● for values in the set. This is in the same vein as the <a href="assets/Pasted%20image%2020250614145340.png">first published image</a>. </p>
-<p>Here's my first running program that (didn't give me any memory errors): </p>
+</li>
+<li>An emulator can instantly be launched and can be sped up, which really brings down the time it takes to test my dodgy code and weed out <em>all</em> the bugs.</li>
+</ol>
+<p>So putting my finger to 'board, I wrote my first attempt at the program:</p>
 <p><img alt="" src="assets/x64sc_WGVr8qVJEx.gif" /></p>
-<p>Note that this is sped up to about <span class="arithmatex">\(10\times\)</span> native speed using the emulator. This is the setup: 
-<img alt="" src="assets/CBMPrgStudio_cujtzXhJqM.png" /></p>
-<p>This issue is that while this works, it's lacking enough resolution to really show off its fractal-like nature. In fact the resolution is so low that, while charmingly retro, it alters the shape's characteristics. Here's the same iteration of the program, with different bounding values for the imaginary and real axes: 
-<img alt="" src="assets/x64sc_GIWUJnD4gD.gif" /></p>
-<p>I'm sure you'll agree that the shape <em>looks</em> different. </p>
-<p>Amongst the many <a href="https://www.studiostyle.sk/dmagic/gallery/gfxmodes.htm">graphics modes available</a> to the C64 is the <code>Standard High-Resolution Bit Map Mode</code> which allows for a <span class="arithmatex">\(320\times200\)</span> dot resolution, with each dot being directly controllable (boolean on/off). I think we can all agree that a this'll give a much-needed upgrade to the clarity of the image, and will greatly contrast the measly <span class="arithmatex">\(40\times25\)</span> "pixel" image I've generated so far. </p>
-<p>So I read (skimmed) a few pages from the <a href="https://www.commodore.ca/manuals/c64_programmers_reference/c64-programmers_reference_guide-03-programming_graphics.pdf">graphics manual (1983)</a> , and found that the following commands are essentially what it's all about:</p>
+<p>Note that this is sped up to about <span class="arithmatex">\(10\times\)</span> native speed using the emulator. This is the setup: </p>
+<p><img alt="" src="assets/CBMPrgStudio_cujtzXhJqM.png" /></p>
+<p>This uses the standard screen resolution and filles the character ● for values in the set. This is in the same vein as the <a href="assets/Pasted%20image%2020250614145340.png">first published image</a>. Although I'll admit that this is the wrong shape; I erroneously referenced a variable without realising that it's value had already been re-assigned. </p>
+<p>Speaking of which, the C64 happily handles fractional and negative numbers, but it can't handle complex numbers and so the real and imaginary parts have to be split. Let's say that <span class="arithmatex">\(z = x+yi\)</span> and <span class="arithmatex">\(c=a+bi\)</span>:</p>
+<div class="arithmatex">\[
+\begin{align}
+z_{n+1} &amp;= {z_n}^2 + c \\
+&amp;= (x+yi)^2 + a + bi \\
+&amp;= x^2 + 2xyi - y^2 + a + bi \\
+&amp;= (x^2-y^2+a) + (2xy+b)i
+\end{align}
+\]</div>
+<p>so for each iteration, the real component becomes <span class="arithmatex">\(x^2-y^2+a\)</span> and the imaginary component becomes <span class="arithmatex">\(2xy+b\)</span>.</p>
+<p>While this iteration of the program works, it's lacking enough resolution to really show off its fractal-like nature. Amongst the many <a href="https://www.studiostyle.sk/dmagic/gallery/gfxmodes.htm">graphics modes available</a> to the C64 is the <code>Standard High-Resolution Bit Map Mode</code> which allows for a <span class="arithmatex">\(320\times200\)</span> pixel resolution, with each pixel being directly controllable (boolean on/off). I think we can all agree that a this'll give a much-needed upgrade to the clarity of the image, and will greatly contrast the measly <span class="arithmatex">\(40\times25\)</span> "pixel" image I've generated so far. </p>
+<p>So I read (skimmed) a few pages from the <a href="https://www.commodore.ca/manuals/c64_programmers_reference/c64-programmers_reference_guide-03-programming_graphics.pdf">graphics manual (1983)</a>, and found that the following commands are essentially what it's all about:</p>
 <div class="highlight"><pre><span></span><code><span class="kr">POKE</span><span class="w"> </span><span class="il">53265</span><span class="p">,</span><span class="w"> </span><span class="kr">PEEK</span><span class="p">(</span><span class="il">53265</span><span class="p">)</span><span class="w"> </span><span class="ow">OR</span><span class="w"> </span><span class="il">32</span><span class="w">   </span><span class="o">:</span><span class="w"> </span><span class="kr">REM</span><span class="w"> </span><span class="vg">TURN</span><span class="w"> </span><span class="vg">STD</span><span class="w"> </span><span class="vg">BITMAP</span><span class="w"> </span><span class="vg">MODE</span><span class="w"> </span><span class="kr">ON</span>
 <span class="kr">POKE</span><span class="w"> </span><span class="il">53265</span><span class="p">,</span><span class="w"> </span><span class="kr">PEEK</span><span class="p">(</span><span class="il">53265</span><span class="p">)</span><span class="w"> </span><span class="ow">AND</span><span class="w"> </span><span class="il">223</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="kr">REM</span><span class="w"> </span><span class="vg">TURN</span><span class="w"> </span><span class="vg">STD</span><span class="w"> </span><span class="vg">BITMAP</span><span class="w"> </span><span class="vg">MODE</span><span class="w"> </span><span class="k">OFF</span>
 
@@ -484,12 +510,20 @@
 <span class="vg">BIT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="il">7</span><span class="o">-</span><span class="p">(</span><span class="vg">X</span><span class="w"> </span><span class="ow">AND</span><span class="w"> </span><span class="il">7</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="kr">REM</span><span class="w"> </span><span class="vg">X</span><span class="w"> </span><span class="k">IS</span><span class="w"> </span><span class="vg">X</span><span class="o">-</span><span class="vg">COORD</span><span class="p">,</span><span class="w"> </span><span class="vg">BOTH</span><span class="w"> </span><span class="vg">COORDS</span><span class="w"> </span><span class="vg">CONSIDERED</span><span class="w"> </span><span class="vg">WHEN</span><span class="w"> </span><span class="vg">CALCULATING</span><span class="w"> </span><span class="vg">ADDR</span>
 <span class="kr">POKE</span><span class="w"> </span><span class="vg">ADDR</span><span class="p">,</span><span class="w"> </span><span class="kr">PEEK</span><span class="p">(</span><span class="vg">ADDR</span><span class="p">)</span><span class="w"> </span><span class="ow">OR</span><span class="w"> </span><span class="il">2</span><span class="o">^</span><span class="vg">BIT</span>
 </code></pre></div>
-<p>Turning this mode on shows this horrifying output:
-<img alt="" src="assets/Pasted%20image%2020250614233240.png" /></p>
-<p>Notice all the different characters. When in this mode, standard characters can't be used. That's because the screen buffer <em>uses the same memory locations as the character map</em>; we're literally over-writing the character map with our own pixel values to display to the screen! I find this to be really funky stuff as someone born in 2000 whose first computer ran windows XP. It's also kind of scary being shown the contents of the computer's raw memory - ready  to be naively fiddled with.</p>
-<p>Continuing through the manual gives the sinusoid example in appendix <a href="#A1">A1</a>.</p>
+<p>It's just telling the computer to set specific values into specific memory locations to toggle the bitmap mode and to set the colours for certain pixels by referencing their address in memory. Calculating the actual address is more involved, so I'll spare you the details. </p>
+<p>Toggling this hi-res mode on shows this horrifying output:</p>
+<p><img alt="" src="assets/Pasted%20image%2020250614233240.png" /></p>
+<p>Notice all the different characters. Unlike the initial low-res image, standard characters can't be used when in this mode. That's because the screen buffer can use the <em>same memory locations as the character map</em>; we're literally over-writing the character map with our own pixel values to display to the screen! I find this to be really funky stuff as someone born in 2000 whose first computer ran windows XP. It's also kind of scary being shown the contents of the computer's raw memory - ready to be naively fiddled with.</p>
+<p>Continuing through the manual gives the sinusoid example in appendix <a href="#a1">A1</a>.</p>
 <h2 id="running-the-program">Running the Program</h2>
+<p>After much pain and gripe (many hours of it), I managed to get a working program on the emulator with an output I was happy with. The code is in appendix <a href="#a2">A2</a>, and after typing typing it out and double checking for any mistakes, I entered <code>RUN</code> and was graced with the following output!</p>
+<p>With 3 nested loops and some serious number-crunching, this program isn't cheap. <em>Especially</em> if you're a poor old C64 in your late 30s being asked to interpret some newbie's basic BASIC for hours on end. As such, the above image took approximately XX hours to render!</p>
 <h2 id="conclusion">Conclusion</h2>
+<p>This was a fun exercise. It was nice and a little enlightening to use an older machine, it's an honest interaction. The computer is what it is and works how it works and you as the user can do whatever you want with that. </p>
+<p>It was also fun to use BASIC and see the parallels to its modern iterations. I find myself writing Inventor scripts in VBA (out of necessity, not choice) at work. Out of curiosity, I tried to use syntactic features that I'd learned on the C64 and had never seen in a VBA environment such as <code>REM</code> and <code>:</code>, and they worked in the same way!</p>
+<p>In future, when I muster the motivation, I'd like to alter the program to add colour. I could also dip my toes into learning machine language to write a more performant variant. Until then, I'll definitely be playing around a lot more with this fun little machine. </p>
+<p>See also:
+- <a href="https://www.reddit.com/r/c64/comments/g5ri65/mandelbrot_set_on_the_c64/">This</a> Reddit post by Paul Soper, which was partly the inspiration for this project.</p>
 <h2 id="appendix">Appendix</h2>
 <h3 id="a1">A1</h3>
 <figure>

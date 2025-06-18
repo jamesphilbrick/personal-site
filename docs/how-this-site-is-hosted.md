@@ -1,6 +1,6 @@
 # How This Site Is Hosted
 ## Overview
-This is a static site compiled from markdown by [Material For MkDocs](https://squidfunk.github.io/mkdocs-material/). All of the pages are created and edited using [Obsidian](https://obsidian.md/). The site files are pushed to a [GitHub repo](https://github.com/jamesphilbrick/personal-site) and then hosted using [Vercel](https://vercel.com/). Alternatively, it could also be hosted on GitHub Pages. 
+This is a static site compiled from markdown by [Material For MkDocs](https://squidfunk.github.io/mkdocs-material/). All of the pages are created and edited using [Obsidian](https://obsidian.md/). The site files are pushed to a [GitHub repo](https://github.com/jamesphilbrick/personal-site) and then hosted using [Vercel](https://vercel.com/). Alternatively, it could also be hosted on GitHub Pages. Well, it's a static site, it could be hosted *anywhere*.
 
 Bar the domain, it is entirely free to create and host. 
 

@@ -13,12 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/mandelbrot-set-on-the-c64.md",
+                "file": "docs/projects.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "mandelbrot-set-on-the-c64"
+              "title": "projects"
+            }
+          },
+          {
+            "id": "d937f325fc1d81d2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/projects-to-do.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "projects-to-do"
             }
           }
         ]
@@ -142,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/mandelbrot-set-on-the-c64.md",
+                "file": "docs/projects.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of mandelbrot-set-on-the-c64"
+              "title": "Outline of projects"
             }
           }
         ],
@@ -168,10 +182,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "384f20bd2913ab4f",
+  "active": "f5cf91dd331abd6d",
   "lastOpenFiles": [
-    "publish/search/search_index.js",
+    "docs/projects-to-do.md",
     "publish/search/search_index.json",
+    "publish/search/search_index.js",
     "publish/search",
     "publish/blog/archive/2025.html",
     "publish/blog/archive",
@@ -180,22 +195,25 @@
     "publish/blog/2025/05/22/yorkshire-3-peaks---may-2024.html",
     "publish/blog/2025/05/26",
     "publish/blog/2025/05/24",
-    "publish/blog/2025/05/22",
     "publish/assets/images/favicon.png",
-    "publish/assets/icons/vector-fowl-white.svg",
     "publish/assets/icons/vector-fowl-terracotta.svg",
+    "publish/assets/icons/vector-fowl-white.svg",
     "publish/assets/icons/vector-fowl-olive.svg",
-    "publish/assets/icons/vector-fowl-copy-grey.svg",
     "publish/assets/icons/vector-fowl-background.svg",
+    "publish/assets/icons/vector-fowl-copy-grey.svg",
     "publish/assets/icons/vector-fowl-black.svg",
     "publish/assets/icons/source.svg",
     "publish/assets/icons/source.png",
     "publish/assets/icons/favicon.png",
-    "docs/photography-astro.md",
-    "docs/photography.md",
-    "docs/mandelbrot-set-on-the-c64.md",
+    "docs/about-this-site.md",
     "docs/projects.md",
+    "docs/contact.md",
+    "docs/cv.md",
+    "docs/how-this-site-is-hosted.md",
+    "docs/mandelbrot-set-on-the-c64.md",
+    "docs/photography.md",
     "docs/projects-engineering.md",
+    "docs/photography-astro.md",
     "docs/wps-templates-manager.md",
     "docs/wps-reverse-engineering-part-creation.md",
     "docs/wps-data-driven-to-do-list.md",
@@ -204,12 +222,8 @@
     "docs/blog/posts/new-zealand-june-2022.md",
     "docs/blog/posts/yorkshire-three-peaks.md",
     "docs/photography-general.md",
-    "docs/about-this-site.md",
     "docs/blog/index.md",
     "docs/index.md",
-    "docs/how-this-site-is-hosted.md",
-    "docs/cv.md",
-    "docs/contact.md",
     "docs/photography-macro.md",
     "docs/photography-wildlife.md",
     "docs/photography-film-double-exposures.md",

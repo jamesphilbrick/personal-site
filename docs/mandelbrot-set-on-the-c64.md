@@ -2,32 +2,66 @@
 [:material-arrow-left: Projects](projects.md)
 
 ## Overview
-The [Mandelbrot set](https://en.wikipedia.org/wiki/Mandelbrot_set) is... 
+My aim is to put my new (...ly acquired) Commodore 64 to the test by rendering out an image of the Mandelbrot set. It also seems like a nice familiar yet non-trivial program to get to grips with BASIC with; one with a few challenges and a satisfying result.
+
+The [Mandelbrot set](https://math.libretexts.org/Bookshelves/Analysis/Complex_Analysis_-_A_Visual_and_Interactive_Introduction_(Ponce_Campuzano)/05%3A_Chapter_5/5.05%3A_The_Mandelbrot_Set) is simply just a set of complex numbers which happen to all satisfy the following condition:
+
+Given some point, $c$, on the complex plane, throw it into the below recursive formula:
+
+$$
+\begin{align}
+z_{n+1} &= {z_n}^2 + c \\
+z_0 &= 0 + 0i
+\end{align}
+$$
+
+...and see what happens to the value after some $N$ iterations. If that value grows out of control and tends to blow up towards infinity, then it's disqualified; it's not allowed in the set. Conversely, if it remains *bounded*, then it's granted membership status.
+
+While this definition seems completely out of left field and gives the impression that good ol' [Benoit Mandelbrot](https://en.wikipedia.org/wiki/Benoit_Mandelbrot) must have been rather bored at one point, it turns out it allows us to generate all sorts of really fancy images. When plotting this set on the complex plane, we're left with an infinitely detailed and wonderfully complex self-repeating delight. And this is just for one definition of one set. There are oodles out there. For instance, check out [this page](https://paulbourke.net/fractals/sinjulia/) by Paul Bourke for some saliva-inducing visuals using the Julia set which takes the form $z_{n+1}=c\sin{(n_k)}$. Also take a look at [these ones](https://paulbourke.net/fractals/juliaset/index.html) while you're there.
+
+For now, I'll stick with rendering the Mandelbrot set. It's more of a classic: the granddaddy of fractals. 
+
+Note that pixels can either be coloured in a boolean manner(either in the set or out), or they can be gradated in hue or intensity based on the number of iterations they can handle before blowing up to infinity. For now, I'm going with the former approach as it's simpler and means I don't have to deal with the C64's limited colour palate. Did I say "limited"? I meant to say "extensive"; there are a whopping 16 of them to choose from!
 ## Development
-I first sat down with my physical C64 to learn how to use it and read up on the basics of BASIC. Something about reading the physical manual in my hand which had been type-set in the early '80s was really satisfying. Limiting myself to just the one resource in front of me, without googling a whole lot and jumping from site to site every time I needed to learn a new piece of syntax, was quite refreshing; it forced me to really *read* the manual and experience the charm of all its hand-drawn figures and its dated simplicity.
+:material-arrow-down: If you want to skip the details, you can go straight to the [output](#running-the-program).
 
-After tapping away at my breadbin for a while, I decided to power it down and jump on to my windows 11 PC to start developing the program using a modern IDE and emulator, for a couple of reasons:
+At first, I sat down in front of my breadbin of a C64 to learn how to even use the thing, and to read up on the basics of BASIC. Something about reading the physical manual held in my physical hand, reading physically printed words which were typeset in the early '80s was really satisfying. Some of the lines and arrows were very obviously hand drawn and I'm sure [Letraset](https://hullabaloo.co.uk/blog/whatever-happened-letraset/) was likely used here or there.
+Limiting myself to just the one resource in front of me, without googling a whole lot or jumping from site to site every time I needed to learn a new piece of syntax was quite refreshing; it forced me to really *read* the manual and experience the charm dated simplicity.
 
-1. ...nice ide w/ automatic re-numbering
-2. can speed up the emulator
+After tapping away for a while, I decided to chicken out. I powered it down and jumped onto my Windows 11 PC to start developing the program using a modern IDE ([CBM prg Studio](https://www.ajordison.co.uk/index.html)) and emulator ([VICE](https://vice-emu.sourceforge.io/)), for a couple of reasons:
 
-My first attempt at the program was to use the standard screen resolution and use `PEEK` and `POKE` to fill the character ● for values in the set. This is in the same vein as the [first published image](assets/Pasted%20image%2020250614145340.png). 
+1. A nice modern IDE environment greatly speeds up development with features such as
+	1. a usable amount of screen space,
+	2. automatic renumbering of lines for easier editing,
+	3. and pretty colours.
+2. An emulator can instantly be launched and can be sped up, which really brings down the time it takes to test my dodgy code and weed out *all* the bugs.
 
-Here's my first running program that (didn't give me any memory errors): 
+So putting my finger to 'board, I wrote my first attempt at the program:
 
 ![](assets/x64sc_WGVr8qVJEx.gif)
 
 Note that this is sped up to about $10\times$ native speed using the emulator. This is the setup: 
+
 ![](assets/CBMPrgStudio_cujtzXhJqM.png)
 
-This issue is that while this works, it's lacking enough resolution to really show off its fractal-like nature. In fact the resolution is so low that, while charmingly retro, it alters the shape's characteristics. Here's the same iteration of the program, with different bounding values for the imaginary and real axes: 
-![](assets/x64sc_GIWUJnD4gD.gif)
+This uses the standard screen resolution and filles the character ● for values in the set. This is in the same vein as the [first published image](assets/Pasted%20image%2020250614145340.png). Although I'll admit that this is the wrong shape; I erroneously referenced a variable without realising that it's value had already been re-assigned. 
 
-I'm sure you'll agree that the shape *looks* different. 
+Speaking of which, the C64 happily handles fractional and negative numbers, but it can't handle complex numbers and so the real and imaginary parts have to be split. Let's say that $z = x+yi$ and $c=a+bi$:
 
-Amongst the many [graphics modes available](https://www.studiostyle.sk/dmagic/gallery/gfxmodes.htm) to the C64 is the `Standard High-Resolution Bit Map Mode` which allows for a $320\times200$ dot resolution, with each dot being directly controllable (boolean on/off). I think we can all agree that a this'll give a much-needed upgrade to the clarity of the image, and will greatly contrast the measly $40\times25$ "pixel" image I've generated so far. 
+$$
+\begin{align}
+z_{n+1} &= {z_n}^2 + c \\
+&= (x+yi)^2 + a + bi \\
+&= x^2 + 2xyi - y^2 + a + bi \\
+&= (x^2-y^2+a) + (2xy+b)i
+\end{align}
+$$
 
-So I read (skimmed) a few pages from the [graphics manual (1983)](https://www.commodore.ca/manuals/c64_programmers_reference/c64-programmers_reference_guide-03-programming_graphics.pdf) , and found that the following commands are essentially what it's all about:
+so for each iteration, the real component becomes $x^2-y^2+a$ and the imaginary component becomes $2xy+b$.
+
+While this iteration of the program works, it's lacking enough resolution to really show off its fractal-like nature. Amongst the many [graphics modes available](https://www.studiostyle.sk/dmagic/gallery/gfxmodes.htm) to the C64 is the `Standard High-Resolution Bit Map Mode` which allows for a $320\times200$ pixel resolution, with each pixel being directly controllable (boolean on/off). I think we can all agree that a this'll give a much-needed upgrade to the clarity of the image, and will greatly contrast the measly $40\times25$ "pixel" image I've generated so far. 
+
+So I read (skimmed) a few pages from the [graphics manual (1983)](https://www.commodore.ca/manuals/c64_programmers_reference/c64-programmers_reference_guide-03-programming_graphics.pdf), and found that the following commands are essentially what it's all about:
 
 ```basic
 POKE 53265, PEEK(53265) OR 32   : REM TURN STD BITMAP MODE ON
@@ -38,19 +72,30 @@ BIT = 7-(X AND 7) : REM X IS X-COORD, BOTH COORDS CONSIDERED WHEN CALCULATING AD
 POKE ADDR, PEEK(ADDR) OR 2^BIT
 ```
 
-Turning this mode on shows this horrifying output:
+It's just telling the computer to set specific values into specific memory locations to toggle the bitmap mode and to set the colours for certain pixels by referencing their address in memory. Calculating the actual address is more involved, so I'll spare you the details. 
+
+Toggling this hi-res mode on shows this horrifying output:
+
 ![](assets/Pasted%20image%2020250614233240.png)
 
-Notice all the different characters. When in this mode, standard characters can't be used. That's because the screen buffer *uses the same memory locations as the character map*; we're literally over-writing the character map with our own pixel values to display to the screen! I find this to be really funky stuff as someone born in 2000 whose first computer ran windows XP. It's also kind of scary being shown the contents of the computer's raw memory - ready  to be naively fiddled with.
+Notice all the different characters. Unlike the initial low-res image, standard characters can't be used when in this mode. That's because the screen buffer can use the *same memory locations as the character map*; we're literally over-writing the character map with our own pixel values to display to the screen! I find this to be really funky stuff as someone born in 2000 whose first computer ran windows XP. It's also kind of scary being shown the contents of the computer's raw memory - ready to be naively fiddled with.
 
-Continuing through the manual gives the sinusoid example in appendix [A1](#A1).
-
-
-
+Continuing through the manual gives the sinusoid example in appendix [A1](#a1).
 ## Running the Program
+After much pain and gripe (many hours of it), I managed to get a working program on the emulator with an output I was happy with. The code is in appendix [A2](#a2), and after typing typing it out and double checking for any mistakes, I entered `RUN` and was graced with the following output!
 
+
+
+With 3 nested loops and some serious number-crunching, this program isn't cheap. *Especially* if you're a poor old C64 in your late 30s being asked to interpret some newbie's basic BASIC for hours on end. As such, the above image took approximately XX hours to render!
 ## Conclusion
+This was a fun exercise. It was nice and a little enlightening to use an older machine, it's an honest interaction. The computer is what it is and works how it works and you as the user can do whatever you want with that. 
 
+It was also fun to use BASIC and see the parallels to its modern iterations. I find myself writing Inventor scripts in VBA (out of necessity, not choice) at work. Out of curiosity, I tried to use syntactic features that I'd learned on the C64 and had never seen in a VBA environment such as `REM` and `:`, and they worked in the same way!
+
+In future, when I muster the motivation, I'd like to alter the program to add colour. I could also dip my toes into learning machine language to write a more performant variant. Until then, I'll definitely be playing around a lot more with this fun little machine. 
+
+See also:
+- [This](https://www.reddit.com/r/c64/comments/g5ri65/mandelbrot_set_on_the_c64/) Reddit post by Paul Soper, which was partly the inspiration for this project.
 ## Appendix
 ### A1
 ![](assets/Pasted%20image%2020250614230810.png)

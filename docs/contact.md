@@ -7,11 +7,11 @@ icon: material/message
 # Contact
 ## Professional
 
-| :fontawesome-brands-linkedin-in: | [linkedin.com/in/james-philbrick/](https://www.linkedin.com/in/james-philbrick/) |
+| Channel                          | Link                                                                             |
 | -------------------------------- | -------------------------------------------------------------------------------- |
+| :fontawesome-brands-linkedin-in: | [linkedin.com/in/james-philbrick/](https://www.linkedin.com/in/james-philbrick/) |
 | :fontawesome-solid-envelope:     | [jamesedphilbrick@gmail.com](mailto:jamesedphilbrick@gmail.com)                  |
 | :fontawesome-brands-instagram:   | See [other accounts](#other-accounts) below.                                     |
-
 
 ## Other Accounts
 ### Instagram
