@@ -23,9 +23,11 @@ For now, I'll stick with rendering the Mandelbrot set. It's more of a classic: t
 
 Note that pixels can either be coloured in a boolean manner(either in the set or out), or they can be gradated in hue or intensity based on the number of iterations they can handle before blowing up to infinity. For now, I'm going with the former approach as it's simpler and means I don't have to deal with the C64's limited colour palate. Did I say "limited"? I meant to say "extensive"; there are a whopping 16 of them to choose from!
 ## Development
-:material-arrow-down: If you want to skip the details, you can go straight to the [output](#running-the-program).
+!!! note
+	:material-arrow-down: If you want to skip the details, you can go straight to the [output](#running-the-program).
 
 At first, I sat down in front of my breadbin of a C64 to learn how to even use the thing, and to read up on the basics of BASIC. Something about reading the physical manual held in my physical hand, reading physically printed words which were typeset in the early '80s was really satisfying. Some of the lines and arrows were very obviously hand drawn and I'm sure [Letraset](https://hullabaloo.co.uk/blog/whatever-happened-letraset/) was likely used here or there.
+
 Limiting myself to just the one resource in front of me, without googling a whole lot or jumping from site to site every time I needed to learn a new piece of syntax was quite refreshing; it forced me to really *read* the manual and experience the charm dated simplicity.
 
 After tapping away for a while, I decided to chicken out. I powered it down and jumped onto my Windows 11 PC to start developing the program using a modern IDE ([CBM prg Studio](https://www.ajordison.co.uk/index.html)) and emulator ([VICE](https://vice-emu.sourceforge.io/)), for a couple of reasons:
@@ -40,13 +42,11 @@ So putting my finger to 'board, I wrote my first attempt at the program:
 
 ![](assets/x64sc_WGVr8qVJEx.gif)
 
-Note that this is sped up to about $10\times$ native speed using the emulator. This is the setup: 
-
-![](assets/CBMPrgStudio_cujtzXhJqM.png)
+Note that this is sped up to about $10\times$ native speed using the emulator's "warp" mode.
 
 This uses the standard screen resolution and filles the character ● for values in the set. This is in the same vein as the [first published image](assets/Pasted%20image%2020250614145340.png). Although I'll admit that this is the wrong shape; I erroneously referenced a variable without realising that it's value had already been re-assigned. 
 
-Speaking of which, the C64 happily handles fractional and negative numbers, but it can't handle complex numbers and so the real and imaginary parts have to be split. Let's say that $z = x+yi$ and $c=a+bi$:
+Speaking of which, the C64 happily handles fractional and negative numbers, but it can't handle complex numbers and so the real and imaginary components of the result have to be split and computed separately. Let's say that $z = x+yi$ and $c=a+bi$:
 
 $$
 \begin{align}
@@ -59,7 +59,7 @@ $$
 
 so for each iteration, the real component becomes $x^2-y^2+a$ and the imaginary component becomes $2xy+b$.
 
-While this iteration of the program works, it's lacking enough resolution to really show off its fractal-like nature. Amongst the many [graphics modes available](https://www.studiostyle.sk/dmagic/gallery/gfxmodes.htm) to the C64 is the `Standard High-Resolution Bit Map Mode` which allows for a $320\times200$ pixel resolution, with each pixel being directly controllable (boolean on/off). I think we can all agree that a this'll give a much-needed upgrade to the clarity of the image, and will greatly contrast the measly $40\times25$ "pixel" image I've generated so far. 
+While this character-based iteration of the program works, it's lacking enough resolution to really show off its fractal-like nature. Amongst the many [graphics modes available](https://www.studiostyle.sk/dmagic/gallery/gfxmodes.htm) to the C64 is the `Standard High-Resolution Bit Map Mode` allowing for a $320\times200$ pixel resolution, with each pixel being directly controllable (it can be told what colour it is and whether it's on/off). I think we can all agree that a this'll give a much-needed upgrade to the clarity of the image, greatly contrasting the measly $40\times25$ "pixel" image I've generated so far. 
 
 So I read (skimmed) a few pages from the [graphics manual (1983)](https://www.commodore.ca/manuals/c64_programmers_reference/c64-programmers_reference_guide-03-programming_graphics.pdf), and found that the following commands are essentially what it's all about:
 
@@ -72,30 +72,29 @@ BIT = 7-(X AND 7) : REM X IS X-COORD, BOTH COORDS CONSIDERED WHEN CALCULATING AD
 POKE ADDR, PEEK(ADDR) OR 2^BIT
 ```
 
-It's just telling the computer to set specific values into specific memory locations to toggle the bitmap mode and to set the colours for certain pixels by referencing their address in memory. Calculating the actual address is more involved, so I'll spare you the details. 
+A bunch of gibberish to the unfamiliar eye, I know. It's just telling the C64 to set specific values into specific memory locations to toggle the bitmap mode and to set the colours for certain pixels by referencing their address in memory. Calculating the value of the address is more involved, so I'll spare you the details; the manual gives a useful formula.
 
-Toggling this hi-res mode on shows this horrifying output:
+Putting thumb to key and toggling this hi-res mode on shows this horrifying output:
 
 ![](assets/Pasted%20image%2020250614233240.png)
 
-Notice all the different characters. Unlike the initial low-res image, standard characters can't be used when in this mode. That's because the screen buffer can use the *same memory locations as the character map*; we're literally over-writing the character map with our own pixel values to display to the screen! I find this to be really funky stuff as someone born in 2000 whose first computer ran windows XP. It's also kind of scary being shown the contents of the computer's raw memory - ready to be naively fiddled with.
+Notice all the different characters. Unlike the initial low-res image, standard characters can't be used when in this mode. That's because the screen buffer can use the *same memory locations as the character map*; we're literally over-writing the character map with our own pixel values to display to the screen! I find this to be really funky stuff as someone born in 2000 whose first computer ran windows XP. Low level memory mapping like this has never been a part of using a computer up until now. It's kind of *scary* being shown the contents of the computer's raw memory - ready to be naively fiddled with.
 
-Continuing through the manual gives the sinusoid example in appendix [A1](#a1).
+Continuing through the manual, I plotted the sinusoid example in appendix [A1](#a1).
 ## Running the Program
-After much pain and gripe (many hours of it), I managed to get a working program on the emulator with an output I was happy with. The code is in appendix [A2](#a2), and after typing typing it out and double checking for any mistakes, I entered `RUN` and was graced with the following output!
+After much pain and gripe (many hours of it), I managed to get some working code on the emulator with an output I was happy with (see [A3](#a3) for a verbatim copy) After typing typing it out and double checking for any mistakes, I entered `RUN` and was graced with the following output!
 
+![](assets/Pasted%20image%2020250619224645.png)
 
+See [A2](#a2) for a clearer image (emulator screenshot).
 
-With 3 nested loops and some serious number-crunching, this program isn't cheap. *Especially* if you're a poor old C64 in your late 30s being asked to interpret some newbie's basic BASIC for hours on end. As such, the above image took approximately XX hours to render!
+Of course this wasn't *instant*... With 3 nested loops and some serious number-crunching, this program isn't cheap for hardware of this age. Especially if the poor C64 running it has to deal with some newbie's un-optimised BASIC for hours on end. As such, the above image took approximately 35-40 hours to render! This corroborates [this](https://www.reddit.com/r/c64/comments/g5ri65/mandelbrot_set_on_the_c64/) Reddit post by Paul Soper (which was partly the inspiration for this project); their code took 36 hours to run.
 ## Conclusion
 This was a fun exercise. It was nice and a little enlightening to use an older machine, it's an honest interaction. The computer is what it is and works how it works and you as the user can do whatever you want with that. 
 
 It was also fun to use BASIC and see the parallels to its modern iterations. I find myself writing Inventor scripts in VBA (out of necessity, not choice) at work. Out of curiosity, I tried to use syntactic features that I'd learned on the C64 and had never seen in a VBA environment such as `REM` and `:`, and they worked in the same way!
 
 In future, when I muster the motivation, I'd like to alter the program to add colour. I could also dip my toes into learning machine language to write a more performant variant. Until then, I'll definitely be playing around a lot more with this fun little machine. 
-
-See also:
-- [This](https://www.reddit.com/r/c64/comments/g5ri65/mandelbrot_set_on_the_c64/) Reddit post by Paul Soper, which was partly the inspiration for this project.
 ## Appendix
 ### A1
 ![](assets/Pasted%20image%2020250614230810.png)
@@ -104,6 +103,12 @@ A sine wave example, directly from the [graphics manual](https://www.commodore.c
 ///
 
 ### A2
+![](assets/x64sc_D1NDWaWFY0.png)
+/// caption
+Emulated output for `N=15`.
+///
+### A3
+Below is the full program. Note that the magnitude `MG` of each iteration value $z$ is not square rooted (is that a even valid verb?), to save an operation, since it's being compared to some arbitrary integer stand-in for infinity anyway. Not sure how much time that saved, and I don't have the patience to test it...
 ```basic
 10 REM MANDELBROT - BITMAP MODE
 20 REM J. PHILBRICK - JUNE 2025

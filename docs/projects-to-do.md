@@ -4,4 +4,8 @@ I endeavour to getting round to doing these *one day*.
 - Make my own font. 
 - Replace badge on Tiny Tim and keep log of maintenance. 
 - Design and build a weather station to upload data to [Met Office WOW](https://wow.metoffice.gov.uk/).
+- Running for beginners, running my first marathon.
+- Ramblings about exercise and eating habits.
+- MX5 lights controller
+- Leeds circular route
 - 
