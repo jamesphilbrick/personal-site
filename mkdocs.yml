@@ -31,6 +31,7 @@ plugins:
   - search
   - blog:
       authors_file: "{blog}/.authors.yml"
+      blog_toc: true
 
 markdown_extensions:
   - pymdownx.tasklist:

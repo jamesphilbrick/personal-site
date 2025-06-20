@@ -1,7 +1,6 @@
 authors:
   James:
-    name: James Philbrick        # Author name
-    description: string # Author description
-    avatar: ./assets/abbie-profile.jpg         # Author avatar
-    slug: url           # Author profile slug
-    url: url            # Author website URL
+    name: James Philbrick                                         # Author name
+    description: CAD Engineer, eponymous admin of this site, and peanut M&Ms enthusiast.   # Author description
+    avatar: ./assets/b&w-profile-photo-blog.png                   # Author avatar
+    url: jamesphilbrick.com                                       # Author website URL

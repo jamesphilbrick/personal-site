@@ -7,13 +7,15 @@
     --terracotta: #944434;
     --darkRed: #660c00;
     --olive: #62633A;
-    --background: #f2eddf;
+    /* --background: #f2eddf; */
+    --background: #F5F2EA;
+    --link: #004a77;
 }
 
-.md-container {
+/* .md-container {
     background-image: url(./../../docs/assets/bg.jpg);
     background-repeat: no-repeat;
-}
+} */
 
 [data-md-color-scheme="modern-terracotta"] {
   --md-primary-fg-color: var(--terracotta);
@@ -59,7 +61,7 @@
   --md-typeset-color:                  var(--md-default-fg-color);
 
   /* Typeset `a` color shades */
-  --md-typeset-a-color:                var(--md-primary-fg-color);
+  --md-typeset-a-color:                var(--link);
 
   /* Typeset `del` and `ins` color shades */
   --md-typeset-del-color:              hsla(6, 90%, 60%, 0.15);
@@ -104,4 +106,8 @@ h1 {
 
 .md-copyright {
   color: var(--olive);
+}
+
+.md-typeset a {
+  text-decoration-line: underline;
 }
