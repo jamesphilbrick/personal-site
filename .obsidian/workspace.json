@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/index.md",
+                "file": "docs/why-i-run.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "why-i-run"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/index.md",
+                "file": "docs/why-i-run.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of index"
+              "title": "Outline of why-i-run"
             }
           }
         ],
@@ -182,39 +182,39 @@
     "publish/blog/2025/05/24",
     "publish/blog/2025/05/22",
     "publish/assets/images/favicon.png",
-    "publish/assets/icons/vector-fowl-terracotta.svg",
     "publish/assets/icons/vector-fowl-white.svg",
+    "publish/assets/icons/vector-fowl-terracotta.svg",
     "publish/assets/icons/vector-fowl-olive.svg",
     "publish/assets/icons/vector-fowl-copy-grey.svg",
-    "publish/assets/icons/vector-fowl-background.svg",
     "publish/assets/icons/vector-fowl-black.svg",
+    "publish/assets/icons/vector-fowl-background.svg",
     "publish/assets/icons/source.svg",
     "publish/assets/icons/source.png",
     "publish/assets/icons/favicon.png",
-    "README.md",
-    "docs/index.md",
-    "docs/blog/index.md",
-    "docs/about-this-site.md",
-    "docs/photography.md",
-    "docs/photography-film-double-exposures.md",
-    "docs/photography-general.md",
     "docs/photography-macro.md",
-    "docs/photography-wildlife.md",
+    "docs/why-i-run.md",
+    "docs/index.md",
+    "docs/only-one-body.md",
+    "docs/full-list-of-posts.md",
+    "docs/wps-reverse-engineering-part-creation.md",
     "docs/projects.md",
-    "docs/contact.md",
-    "docs/mandelbrot-set-on-the-c64.md",
-    "a2.md",
+    "docs/wps-data-driven-to-do-list.md",
     "docs/projects-to-do.md",
+    "docs/projects-engineering.md",
+    "docs/photography-wildlife.md",
+    "docs/photography-general.md",
+    "docs/photography-film-double-exposures.md",
+    "docs/photography-astro.md",
+    "docs/photography.md",
+    "docs/mandelbrot-set-on-the-c64.md",
+    "docs/about-this-site.md",
+    "docs/contact.md",
     "docs/cv.md",
     "docs/how-this-site-is-hosted.md",
-    "docs/projects-engineering.md",
-    "docs/photography-astro.md",
+    "README.md",
+    "docs/blog/index.md",
+    "a2.md",
     "docs/wps-templates-manager.md",
-    "docs/wps-reverse-engineering-part-creation.md",
-    "docs/wps-data-driven-to-do-list.md",
-    "docs/projects-personal.md",
-    "docs/blog/posts/trip-peak-district-sept-2024.md",
-    "docs/blog/posts/new-zealand-june-2022.md",
-    "docs/blog/posts/yorkshire-three-peaks.md"
+    "docs/projects-personal.md"
   ]
 }

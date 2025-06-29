@@ -1,4 +1,4 @@
-# Bypassing a Problem: Creating Part Numbers
+# Creating Part Numbers
 [:material-arrow-left: Projects - Engineering](projects-engineering.md)
 ## Summary of the Problem
 At the time of writing (May 2025), the company I work for uses a production control software to, among other things, manage the company's part inventory. For the sake of anonymity, lets call this software *Advancement Systems*. As a member of the engineering team, I frequently need to create and update parts to reflect my contract-specific arrangements and designs.
