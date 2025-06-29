@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/why-i-run.md",
+                "file": "docs/contact.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "why-i-run"
+              "title": "contact"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/why-i-run.md",
+                "file": "docs/contact.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of why-i-run"
+              "title": "Outline of contact"
             }
           }
         ],
@@ -170,51 +170,51 @@
   },
   "active": "54df40f69b4c25cb",
   "lastOpenFiles": [
-    "publish/search/search_index.js",
     "publish/search/search_index.json",
+    "publish/search/search_index.js",
     "publish/search",
-    "publish/blog/archive/2025.html",
-    "publish/blog/archive",
     "publish/blog/2025/05/26/new-zealand---june-2022.html",
     "publish/blog/2025/05/24/camping-in-the-peak-district---sept-2024.html",
     "publish/blog/2025/05/22/yorkshire-3-peaks---may-2024.html",
     "publish/blog/2025/05/26",
     "publish/blog/2025/05/24",
     "publish/blog/2025/05/22",
+    "publish/blog/archive/2025.html",
+    "publish/blog/2025/05",
     "publish/assets/images/favicon.png",
-    "publish/assets/icons/vector-fowl-white.svg",
     "publish/assets/icons/vector-fowl-terracotta.svg",
+    "publish/assets/icons/vector-fowl-white.svg",
     "publish/assets/icons/vector-fowl-olive.svg",
+    "publish/assets/icons/source.svg",
     "publish/assets/icons/vector-fowl-copy-grey.svg",
     "publish/assets/icons/vector-fowl-black.svg",
     "publish/assets/icons/vector-fowl-background.svg",
-    "publish/assets/icons/source.svg",
     "publish/assets/icons/source.png",
     "publish/assets/icons/favicon.png",
-    "docs/photography-macro.md",
-    "docs/why-i-run.md",
     "docs/index.md",
+    "docs/projects-engineering.md",
+    "docs/wps-templates-manager.md",
+    "docs/projects.md",
+    "docs/projects-to-do.md",
+    "docs/why-i-run.md",
     "docs/only-one-body.md",
+    "docs/contact.md",
+    "docs/about-this-site.md",
+    "docs/how-this-site-is-hosted.md",
+    "docs/photography-macro.md",
     "docs/full-list-of-posts.md",
     "docs/wps-reverse-engineering-part-creation.md",
-    "docs/projects.md",
     "docs/wps-data-driven-to-do-list.md",
-    "docs/projects-to-do.md",
-    "docs/projects-engineering.md",
     "docs/photography-wildlife.md",
     "docs/photography-general.md",
     "docs/photography-film-double-exposures.md",
     "docs/photography-astro.md",
     "docs/photography.md",
     "docs/mandelbrot-set-on-the-c64.md",
-    "docs/about-this-site.md",
-    "docs/contact.md",
     "docs/cv.md",
-    "docs/how-this-site-is-hosted.md",
     "README.md",
     "docs/blog/index.md",
     "a2.md",
-    "docs/wps-templates-manager.md",
     "docs/projects-personal.md"
   ]
 }

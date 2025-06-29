@@ -13,8 +13,8 @@ I could have used any markdown editor; Obsidian is just what I know and already 
 
 The primary issue is that Obsidian, by default, formats markdown files slightly differently than what MkDocs expects, so a few changes to the default settings needed to be made. Primarily: 
 
-- [[wikilinks]] needed to be disabled. 
+- [[wikilinks]] need to be disabled. 
 - Note title ≠ note file name. This forces note titles to be written as top-level headings in each note.
-- files need to be saved to the correct location as per the MkDocs file structure. 
+- Files need to be saved to the correct location as per the MkDocs file structure. 
 ## Hosting
 Vercel is linked to the site's GitHub repo (which needs to be public). Every time a commit is pushed, it is automatically detected and the live site updates in a matter of seconds. Domains can be bought and applied through Vercel directly.

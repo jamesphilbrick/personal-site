@@ -6,7 +6,7 @@ icon: material/message
 
 # Contact
 
-| Channel                          | Link                                                                             |
+| Channel/Site                     | Link                                                                             |
 | -------------------------------- | -------------------------------------------------------------------------------- |
 | :fontawesome-brands-linkedin-in: | [linkedin.com/in/james-philbrick/](https://www.linkedin.com/in/james-philbrick/) |
 | :fontawesome-solid-envelope:     | [jamesedphilbrick@gmail.com](mailto:jamesedphilbrick@gmail.com)                  |

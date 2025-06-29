@@ -10,7 +10,7 @@ I have multiple purposes for this website:
 - **Professional reference** - it's also a space in which to collate information and experiences related to my professional life which would very likely be too niche for other platforms - it's a space wherein I can share that sort of stuff without resorting to that soul-devoid-corporate-platform-that-shall-not-be-named which rhymes with *BlinkedBin*. It may also be a useful showcase of my experience and skillset, conveniently packaged and destined for the eyes of (preferably deep-pocketed) prospective employees!
 - **Unconstrained content sharing** - other social platforms such as Instagram or Facebook are necessarily limited in their format (usually some block of text attached to some set of images). Whereas this is my kingdom. For all intents and purposes, I can make it what I want it to be, without competing with some attention-centred algorithm or battling image count limitations.
 - **Writing things out helps me reflect** - the art of reliving some experience or summarising some project - turning it over and really *remembering* that experience is really valuable to me. It's nice to have a cemented record outside of my fallible and forgetful memories and writing that record down also helps to better reflect and appreciate that which I've experienced.
-- **Writing things out helps me think** - It's a tool for organising exploring my thoughts. 
+- **Writing things out helps me think** - It's a tool for organising exploring my thoughts. I'm not sure who said it first but I've read the quote "writing is nature's way of letting you know how sloppy your thinking is".
 - **Its fun!**
 
 See also:
