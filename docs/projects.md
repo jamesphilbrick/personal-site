@@ -16,6 +16,4 @@ This list is truncated. See [Projects - Engineering](projects-engineering.md) fo
 ## Miscellaneous
 - To be added; come back soon!
 
-See also:
-
-- [Projects on the Back Burner](projects-to-do.md) - my project to do list, for personal reference. 
+See also [Projects on the Back Burner](projects-to-do.md) - my project to do list, for personal reference. 

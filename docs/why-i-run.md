@@ -1,44 +1,63 @@
 # Why I Run
-!!! warning
-	This post is a work in progress. Content may be missing or incomplete.
 
 Mulling over what I enjoy about running and looking into some quantitative benefits of doing so.
 
+<iframe height='160' width='300' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/53847048/activity-summary/f5193e6b8417a4ef90e4286b6ad467761f22b8aa'></iframe>
 ## What's so Special about Running?
-I highly recommend watching [The Science of Marathon Running](https://www.youtube.com/watch?v=2WuB8BhUJrc) by Joe Hanson of *Be Smart* on YouTube. It summarises the ways in which humans are adapted to run long distances and briefly describes the energy mechanism by which we're able do so. 
+As with other aspects of being human, we can look at the lifestyle we *evolved* to suit as a rough guide as to what our bodies can benefit from, and how we should endeavour to pilot them. It's only relatively recently that the modern world has confronted the idea that our sedentary lifestyles contravene the evolutionary encoding of our genes, that of genetic enhancements allowing for **periodic endurance running**. I highly recommend watching [The Science of Marathon Running](https://www.youtube.com/watch?v=2WuB8BhUJrc) by Joe Hanson which gives a brief introduction to the topic. It touches on the fact that running is arguably what *made us human* - what allowed for us hairless apes to become what we are today (and to become hairless in the first place).  
 
-As with other aspects of being human, we can look what lifestyle we *evolved* to have as a rough guide as to what our bodies can benefit from. 
-It has widely been concluded that [persistence hunting](https://en.wikipedia.org/wiki/Persistence_hunting) played a big part in allowing pre-historic man to catch his supper. As willowy hairless apes we are no match for cheetahs or lions in terms of speed or strength. However, our slender naked bodies do give us the ability to *sweat* and to effectively radiate heat, allowing us to run after a kudu and to *keep running* after it. In time, the  kudu overheats and reluctantly gets a bash to the head. We then have to lug a kudu back to the campfire (or if it's a long way, just lug back what we can carry and leave the rest to the scavengers), which is a lot of walking. The scavenging and gathering side of the hunter-gatherer coin also requires traversing great distances. According to [this study](https://www.sciencedirect.com/science/article/abs/pii/S0002934310004638) by O'Keefe et. al.: 
+We are the only primates capable of sustained endurance running [^1]. Below are some of the adaptations we have to thank for this coveted award:
 
-> Although the distances covered would have varied widely, most estimates indicate average daily distances covered were in the range of 6 to 16 km. The hunter-gatherers' daily energy expenditures for physical activity typically were at least 800 to 1200 kcal,41 or about 3 to 5 times more than the average American adult today.
+- the ability to sweat,
+- little body hair to get in the way of said sweating,
+- a skinny stature to allow better radiation of heat (large relative surface area),
+- a vascular reaction to changes in body temperature,
+- ample slow-twitch muscle fibres,
+- long bipedal legs with elastic tendons,
+- an active and responsive cardiovascular system adjusting heart rate, blood pressure, and vessel dilation as needed,
+- and many more. 
 
-So our modern sedentary lifestyles juxtapose our ancestral habits and contravene what our bodies were designed for. Enter *running*: a cost-effective and simple way to bridge the gap. 
+![](assets/Pasted%20image%2020250702002253.png)
 
-Note that this is likely only a minor factor in the modern obesity epidemic - that's primarily down to diet. See [Only One Body](only-one-body.md) - a write up of mine which goes into more depth of the benefits of physical exercise in general. 
+Okay fine, so we're built to run, but why did prehistoric man need to do all this running? Well, when prehistoric man was hungry, his weapon of choice was [persistence hunting](https://en.wikipedia.org/wiki/Persistence_hunting). Willowy hairless apes are obviously no match for cheetahs or lions in terms of speed or strength. However, thanks in part to the list above, we can start running after a kudu or some other type of antelope and to *keep chasing it*, long after the lion or cheetah decided to call it quits and go nap under a tree. In time, the  kudu overheats, stalls, and reluctantly gets a bash to the head. 
 
-If you take the time to research more into the rational of the importance of running, you'll likely come across books such as [Born To Run](https://www.google.co.uk/books/edition/Born_to_Run/_onEr-4TXJsC?hl=en&gbpv=0). [This talk](https://www.youtube.com/watch?v=b-iGZPtWXzE) by the author is very entertaining. People can get into debates about how far to take the idea that we should emulate our forebearers, with the dominant debate concerning the subject of barefoot running. I personally agree with some of the arguments, but counter-argue that my office-worker feet are soft and far from leathery, and that the savannah of yesteryear wasn't paved with abrasive asphalt, nor littered with broken glass or tetanus-infested rusty nails. 
+That's just the hunting side of the hunter-gatherer coin. To effectively gather, one must walk a lot. According to a study by O'Keefe et. al. [^2]: 
+
+> Although the distances covered would have varied widely, most estimates indicate average daily distances covered were in the range of 6 to 16 km. The hunter-gatherers' daily energy expenditures for physical activity typically were at least 800 to 1200 kcal, or about *3 to 5 times more than the average American adult today*.
+
+So our modern sedentary lifestyles juxtapose our ancestral habits and contravene what our bodies were designed for. Note that this is likely only a minor factor in the modern obesity epidemic - that's primarily down to diet. See [Only One Body](only-one-body.md) - a write up of mine which goes into more depth of the benefits of physical exercise in general. 
+
+A popular book on the subject is [Born To Run](https://www.google.co.uk/books/edition/Born_to_Run/_onEr-4TXJsC?hl=en&gbpv=0). [This talk](https://www.youtube.com/watch?v=b-iGZPtWXzE) by the author is very entertaining. People can get into debates about how far to take the idea that we should emulate our forebearers, with the dominant debate concerning the subject of barefoot running. I personally agree with some of the arguments, but counter-argue that my office-worker feet are soft and far from leathery, and that the savannah of yesteryear wasn't paved with abrasive asphalt, nor littered with broken glass or tetanus-infested rusty nails. 
+
+![](assets/Pasted%20image%2020250629224813.png){width=350}
+/// caption
+
+///
 
 Running on the beach with your toes out is wonderful, though. 
-
-![](assets/Pasted%20image%2020250629224813.png)
 ## The Benefits
 A lot of the benefits of consistent exercise and not immediately palpable; they are too slight or slow to be felt on discrete bases. However there are a few ways in which running can feel really good in the moment:
 
-- Runners high - I've only recall really feeling this once, while running down a row of coppiced trees at sunset (I was half lost at the time). Other than that - in my experience at least - runner's high is not a common occurrence.
+- Runners high - I've only recall really feeling this once, while running down a row of coppiced trees at sunset (I was half lost at the time). Other than that - in my experience at least - significant runner's high is not a common occurrence. That's not to say that I don't feel great when hitting the tarmac, I often do feel a lot happier. And I find I feel a lot more sociable too; it's kind of like being tipsy, but with a totally clear head.  
+- It feels good to do something hard and a few extra kicks of a sense of achievement can really help when you're having an otherwise shoddy week.
+- On the point of achievement, it's nice to surf the slight feeling of vanity to know that you're putting in the effort, when ±80% of your fellow citizens aren't. You're out here gritting your teeth and enjoying the innumerable benefits from doing so.
 
-- It feels good to do something hard and a few extra feelings of achievement in the week can really help.
+And those longer-term benefits are very real. Again, see [Only One Body](only-one-body.md). 
 
-- On the top of the last point, it's nice to surf the feeling of vanity to know that you're putting in the effort, when ±80% of your fellow citizens aren't. You're out here gritting your teeth and enjoying the innumerable benefits from doing so and, well, that just makes you _better than them_, doesn't it?
-## Why *I* Run
-Enough with the theory, why do I, James, run?
+Enjoying the above benefits is only a part of the reason why I run. The rest of my drive to jog about boils down to the fact that running *makes me feel good about myself*. 
 
-While the afore mentioned heath benefits are a big part of it, it simply just *makes me feel good about myself*. 
+It clears the mind and makes me feel better about my body. I generally find myself feeling fitter and have more physical energy on a day-to-day basis. It's also an excellent opportunity to have some time to myself wherein I'm simply just jogging along with my own thoughts.
 
-It clears the mind and makes me feel better about my body. I generally find myself feeling fitter and more alert. It's also an excellent opportunity to have some time to myself wherein I'm simply just jogging along with my own thoughts. [expand]
+It's also been a great way to explore my local environment. I spend most days driving to the same workplace and shopping at the same shops. If not for the exploratory runs I've been on, my geographical knowledge of Leeds would be much more limited.
+
+![](assets/Pasted%20image%2020250702002352.png)
+/// caption
+Stumbling across a scenic sunset.
+///
 ## Tips for Newbies
 Below is an expanded list of tips that I gave my to brother when he asked if I had any advice for him when we was starting out.
 
-I my opinion, biggest thing as a beginner is to just take it easy; *it's about consistency, not performance* - a lifetime habit with have a much greater effect than having an awesome park run result that one time in your twenties. 
+I my opinion, biggest thing as a beginner is to just take it easy; *it's about consistency, not performance* - a lifetime habit with have a much greater effect than getting an awesome parkrun result that one time in your twenties. 
 
 - Don't worry about pace at all, just go as fast as is comfortable (it won't be comfortable in the beginning, but you'll get an idea of your own comfortable range after a few jogs).
 - Don't worry about form, about toe striking or heel striking or anything. The internet is rife with debate about which methods and techniques are best. Quite frankly that only matters to the professionals seeking out an extra 0.4% performance gain over other professionals. For us mortals, efficiency happens automatically. Ask with talking or eating, your body figures it out automatically; you were built to do it.
@@ -52,4 +71,9 @@ I my opinion, biggest thing as a beginner is to just take it easy; *it's about c
 - lastly, feel free to disregard any of the above points. If you find that you don't agree with something I've said, then throw it in the bin. Running is a solitary activity - one of the few times in our modern lives where we truly push ourselves and rely on ourselves in nobody's company but our own - it can be deeply personal. Find out what works for you and don't let other dissuade your or pressure you otherwise.
 
 ## Conclusion
-I suggest you, my dear reader, pop on a pair of trainers and go for a jog. It'll do wonders for you. If you find the act of running too monotonous, then fine. Go play water polo or football instead. Just do some worthwhile physical activity, and do it consistently. 
+After reading this, my dear reader, I hope that you are inspired to pop on a pair of trainers and go for a jog. It'll do wonders for you. If you find the act of running too monotonous, then fine. Go play water polo or football instead. Just do some worthwhile physical activity, and do it consistently. 
+
+
+[^1]: Mark P. Mattson - https://doi.org/10.1016/j.arr.2012.01.007
+
+[^2]: O'Keefe et. al. - https://doi.org/10.1016/j.amjmed.2010.04.026

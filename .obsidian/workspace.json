@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/contact.md",
+                "file": "docs/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "contact"
+              "title": "index"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/contact.md",
+                "file": "docs/index.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of contact"
+              "title": "Outline of index"
             }
           }
         ],
@@ -170,6 +170,9 @@
   },
   "active": "54df40f69b4c25cb",
   "lastOpenFiles": [
+    "docs/full-list-of-posts.md",
+    "docs/index.md",
+    "docs/why-i-run.md",
     "publish/search/search_index.json",
     "publish/search/search_index.js",
     "publish/search",
@@ -180,37 +183,33 @@
     "publish/blog/2025/05/24",
     "publish/blog/2025/05/22",
     "publish/blog/archive/2025.html",
-    "publish/blog/2025/05",
     "publish/assets/images/favicon.png",
     "publish/assets/icons/vector-fowl-terracotta.svg",
     "publish/assets/icons/vector-fowl-white.svg",
-    "publish/assets/icons/vector-fowl-olive.svg",
-    "publish/assets/icons/source.svg",
-    "publish/assets/icons/vector-fowl-copy-grey.svg",
     "publish/assets/icons/vector-fowl-black.svg",
+    "publish/assets/icons/vector-fowl-olive.svg",
+    "publish/assets/icons/vector-fowl-copy-grey.svg",
+    "publish/assets/icons/source.svg",
     "publish/assets/icons/vector-fowl-background.svg",
     "publish/assets/icons/source.png",
     "publish/assets/icons/favicon.png",
-    "docs/index.md",
-    "docs/projects-engineering.md",
-    "docs/wps-templates-manager.md",
-    "docs/projects.md",
-    "docs/projects-to-do.md",
-    "docs/why-i-run.md",
     "docs/only-one-body.md",
+    "docs/wps-templates-manager.md",
+    "docs/wps-reverse-engineering-part-creation.md",
+    "docs/wps-data-driven-to-do-list.md",
+    "docs/photography-film-double-exposures.md",
+    "docs/mandelbrot-set-on-the-c64.md",
+    "docs/projects.md",
+    "docs/projects-engineering.md",
     "docs/contact.md",
+    "docs/projects-to-do.md",
     "docs/about-this-site.md",
     "docs/how-this-site-is-hosted.md",
     "docs/photography-macro.md",
-    "docs/full-list-of-posts.md",
-    "docs/wps-reverse-engineering-part-creation.md",
-    "docs/wps-data-driven-to-do-list.md",
     "docs/photography-wildlife.md",
     "docs/photography-general.md",
-    "docs/photography-film-double-exposures.md",
     "docs/photography-astro.md",
     "docs/photography.md",
-    "docs/mandelbrot-set-on-the-c64.md",
     "docs/cv.md",
     "README.md",
     "docs/blog/index.md",

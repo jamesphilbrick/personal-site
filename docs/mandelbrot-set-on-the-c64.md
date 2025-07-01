@@ -82,7 +82,7 @@ Notice all the different characters. Unlike the initial low-res image, standard 
 
 Continuing through the manual, I plotted the sinusoid example in appendix [A1](#a1).
 ## Running the Program
-After much pain and gripe (many hours of it), I managed to get some working code on the emulator with an output I was happy with (see [A3](#a3) for a verbatim copy) After typing typing it out and double checking for any mistakes, I entered `RUN` and was graced with the following output!
+After much pain and gripe (many hours of it), I managed to get some working code on the emulator with an output I was happy with (see [A3](#a3) for a verbatim copy) After typing it out and double checking for any mistakes, I entered `RUN` and was graced with the following output!
 
 ![](assets/Pasted%20image%2020250619224645.png)
 
