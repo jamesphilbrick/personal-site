@@ -1,7 +1,3 @@
----
-icon: material/information-outline
----
-
 # About This Site
 ## Purpose
 I have multiple purposes for this website:

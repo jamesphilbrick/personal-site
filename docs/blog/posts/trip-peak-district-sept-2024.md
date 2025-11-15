@@ -4,6 +4,10 @@ authors:
 date: 2025-05-24
 ---
 # Camping in the Peak District - Sept 2024
+
+A 2-day camping trip to the Peak District, visiting Chatsworth House and Poole's Cavern. 
+
+<!-- more -->
 ## Day 0 - Setting Up Camp
 We arrived on Friday evening after work to set up the tent at [Dale Farm Rural Campsite](https://maps.app.goo.gl/JReTpgvXy4t3wz5W8), a lovely little campsite not far from Bakewell. 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2387.38490760889!2d-1.7110993232745102!3d53.24680157226059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487a28d927066ec9%3A0x2e80ffa967c8e6ad!2sDale%20Farm%20Rural%20Campsite!5e0!3m2!1sen!2suk!4v1748464149362!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

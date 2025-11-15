@@ -29,12 +29,6 @@ So our modern sedentary lifestyles juxtapose our ancestral habits and contravene
 
 A popular book on the subject is [Born To Run](https://www.google.co.uk/books/edition/Born_to_Run/_onEr-4TXJsC?hl=en&gbpv=0). [This talk](https://www.youtube.com/watch?v=b-iGZPtWXzE) by the author is very entertaining. People can get into debates about how far to take the idea that we should emulate our forebearers, with the dominant debate concerning the subject of barefoot running. I personally agree with some of the arguments, but counter-argue that my office-worker feet are soft and far from leathery, and that the savannah of yesteryear wasn't paved with abrasive asphalt, nor littered with broken glass or tetanus-infested rusty nails. 
 
-![](assets/Pasted%20image%2020250629224813.png){width=350}
-/// caption
-
-///
-
-Running on the beach with your toes out is wonderful, though. 
 ## The Benefits
 A lot of the benefits of consistent exercise and not immediately palpable; they are too slight or slow to be felt on discrete bases. However there are a few ways in which running can feel really good in the moment:
 

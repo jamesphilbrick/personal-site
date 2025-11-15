@@ -1,7 +1,6 @@
 ---
 tags:
   - contact
-icon: material/message
 ---
 
 # Contact

@@ -1,7 +1,3 @@
----
-icon: material/file-document
----
-
 # CV
 !!! note
 	Once I've completed my CV, I'll link to it here. 

@@ -5,6 +5,8 @@ date: 2025-05-22
 ---
 # Yorkshire 3 Peaks - May 2024
 The [Yorkshire 3 Peaks](https://www.threepeakschallenge.uk/yorkshire-three-peaks-challenge/) is a popular 38.6km route which takes walkers, dawdlers, and amblers alike over the peaks of Pen-y-Ghent, Whernside, and Ingleborough. While some try to walk the whole endeavour in a single day, Abbie and I decided to do it in two, and make it a camping trip. While we weren't in as much of a rush as a result, we did have to lug around our tent and other kit.
+
+<!-- more -->
 ## Route
 We actually did the route in reverse to the typical order, starting with Ingleborough and finishing with Pen-y-Ghent. I recorded the whole thing on Strava and this was the route we took: 
 

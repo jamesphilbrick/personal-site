@@ -19,6 +19,11 @@ theme:
     heading: Bree Serif
   logo: assets/icons/vector-fowl-background.svg
   favicon: assets/icons/favicon.png
+  features:
+    - navigation.tabs
+    - navigation.path
+    - navigation.instant
+    - toc.integrate 
 
 extra_css:
   - stylesheets/extra.css
@@ -69,8 +74,8 @@ extra:
   # footer_links:
   #   - text: "Privacy Policy"
   #     href: "https://anter.dev/privacy"
-  footer_badges:
-    - source: "assets/Written-By-a-Human-Not-By-AI-Badge-black.png"
-      href: "https://notbyai.fyi/"
-    - source: "assets/cc-license.png"
-      href: "https://creativecommons.org/licenses/by-sa/4.0/"
+  # footer_badges:
+  #   - source: "assets/Written-By-a-Human-Not-By-AI-Badge-black.png"
+  #     href: "https://notbyai.fyi/"
+  #   - source: "assets/cc-license.png"
+  #     href: "https://creativecommons.org/licenses/by-sa/4.0/"
